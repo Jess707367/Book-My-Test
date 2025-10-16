@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+                                        <!-- NAV BAR -->
+    <nav class="sticky top-0 z-50 bg-white flex items-center justify-between px-6 sm:px-12 h-16 max-w-7xl mx-auto shadow-md">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+        <!-- <img src="images/logo.png" class="h-10 w-20 sm:h-10" alt="Book My Test Logo"> -->
+        <span class="font-bold text-[18px] md:text-[22px] font-serif text-[#0a2458] text-sm sm:text-lg tracking-wider hover:text-[#983017]">BOOK MY TEST</span>
+    </a>
+
+    <!-- Nav Items -->
+    <ul class="flex gap-8 cursor-pointer text-[12px] sm:text-[16px] hidden lg:flex gap-8 text-sm font-medium text-black-500 custom-text">
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">Home</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">About Us</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">Tests</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">How it Works</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">Downloads</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">Help</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer mt-2"><a href="index.html">Contact</a></li>
+        <li class="w-fit hover:text-red-500 cursor-pointer"> <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-lg text-sm font-semibold">Get the App</a></li>
+    </ul>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="herosection" class="md:grid lg:grid-cols-2 gap-10 items-center relative max-w-7xl mx-auto px-4 py-12 mt-0">    
+    <!-- Left -->
+    <div class="heroleft space-y-8" >
+        <h1 class="text-4xl sm:text-5xl font-semibold text-[#0a2458] hero-section-font">
+        Book English Tests in Minutes — via our App
+        </h1>
+        <p class="text-gray-600 text-lg leading-relaxed max-w-md">
+        Quickly book IELTS, PTE, TOEFL, and other tests through our secure mobile app — trusted by thousands of students across Nepal.
+        </p>
+
+        <div class="flex items-center gap-3">
+            <a href="#" class="flex items-center justify-center px-2 py-2 rounded-lg">
+                <img src="https://static.whatsapp.net/rsrc.php/y8/r/d-aqak0ELcH.svg" 
+                    alt="download Icon" 
+                    class="w-full h-12">
+            </a>
+
+            <!-- Avatars -->
+            <div class="flex -space-x-4">
+                <img src="images/profile1.jpg" class="relative z-40 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
+                <img src="images/profile2.jpg" class="relative z-30 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
+                <img src="images/profile3.jpg" class="relative z-20 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
+            </div>
+            
+            <!-- Rating -->
+            <div class="text-xs text-slate-500">
+                <div class="text-amber-400 text-base leading-none">
+                    ★★★★☆
+                    <span class="text-slate-500 text-[11px]">4.5</span>
+                </div>
+                <div>(10k+ Reviews)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div class="heroright  hidden md:flex   justify-center mt-0 lg:mt-0" data-reveal data-delay="200">
+        <img src="images/boy.png" alt="Book My Test" class="w-full max-w-sm mx-auto object-cover">
+    </div>
+</section>
+
+
+
+<!-- WE SUPPORT -->
+<section class="py-16 bg-[#D5B893]/20 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 max-w-6xl mx-auto px-2">
+
+        <!-- Column 1 -->
+    <div class="flex flex-col items-end gap-8 ">
+        
+        <div class="flex flex-col ml-20">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-left ml-30">Book A Test For: </h2>
+            <button class="self-start bg-orange-500 text-white px-6 py-2 rounded-tl-[30px] rounded-br-[30px] font-semibold hover:bg-orange-600 hidden md:flex">
+            View All Services
+            </button>
+        </div>
+
+        <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60 custom-text">
+            <div class="text-4xl mb-1">
+                <img src="images/IDP-globe.png" alt="" class="h-10 w-10">
+            </div>
+                <h3 class="text-xl font-semibold mb-2">TOEFL</h3>
+                <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+        <!-- Column 2 (lowered) -->
+        <div class="flex flex-col items-center gap-8 mt-12 custom-text">
+        <div class="bg-[#632024] text-white p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60 h-40 mb-5">
+            <div class="text-4xl mb-1">
+                <img src="images/IDP-globe.png" alt="" class="h-10 w-10">
+            </div>
+                <h3 class="text-xl font-semibold mb-2">IELTS</h3>
+                <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+            <div class="text-4xl mb-1">
+                <img src="images/IDP-globe.png" alt="" class="h-10 w-10">
+            </div>
+                <h3 class="text-xl font-semibold mb-2">PTE</h3>
+                <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+        </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="flex flex-col md:items-start gap-8 custom-text">
+            <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60 mb-5">
+                <div class="text-4xl mb-1">
+                    <img src="images/IDP-globe.png" alt="" class="h-10 w-10">
+                </div>
+                    <h3 class="text-xl font-semibold mb-2">GRE</h3>
+                    <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+                <div class="text-4xl mb-1">
+                    <img src="images/sat.png" alt="" class="h-10 w-15 object-cover ">
+                </div>
+                    <h3 class="text-xl font-semibold mb-2">SAT</h3>
+                    <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <!-- View All Services Button -->
+        <div class="mt-8 flex justify-center sm:justify-start md:hidden">
+            <button class="bg-orange-500 text-white px-6 py-2 rounded-tl-[30px] rounded-br-[30px] font-semibold hover:bg-orange-600">
+            View All Services
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 bg-[#D5B893]/20 max-w-7xl mx-auto px-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <!-- Column 1 -->
+    <div class="flex flex-col gap-8">
+      <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+        <img src="images/IDP-globe.png" alt="" class="h-10 w-10 mb-2">
+        <h3 class="text-xl font-semibold mb-2">TOEFL</h3>
+        <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="flex flex-col gap-8">
+      <div class="bg-[#632024] text-white p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+        <img src="images/IDP-globe.png" alt="" class="h-10 w-10 mb-2">
+        <h3 class="text-xl font-semibold mb-2">IELTS</h3>
+        <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+        <img src="images/IDP-globe.png" alt="" class="h-10 w-10 mb-2">
+        <h3 class="text-xl font-semibold mb-2">PTE</h3>
+        <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="flex flex-col gap-8">
+      <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+        <img src="images/IDP-globe.png" alt="" class="h-10 w-10 mb-2">
+        <h3 class="text-xl font-semibold mb-2">GRE</h3>
+        <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="bg-white text-black p-8 rounded-tl-[60px] rounded-br-[60px] shadow-md hover:-translate-y-1 transition-transform w-60">
+        <img src="images/sat.png" alt="" class="h-10 w-15 object-cover mb-2">
+        <h3 class="text-xl font-semibold mb-2">SAT</h3>
+        <p class="text-sm opacity-90">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- View All Services Button -->
+  <div class="mt-8 flex justify-center sm:justify-start">
+    <button class="bg-orange-500 text-white px-6 py-2 rounded-tl-[30px] rounded-br-[30px] font-semibold hover:bg-orange-600">
+      View All Services
+    </button>
+  </div>
+</section>
+
+
+
+<!-- downloaded?? -->
+
+<!-- <section class="bg-white py-8">
+    <div class="max-w-7xl mx-auto overflow-hidden relative">
+        <div class="flex animate-marquee space-x-10">
+
+            <img src="images/britishcouncil.png" alt="British Council" class="h-12">
+            <img src="images/idp.png" alt="IDP" class="h-12">
+            <img src="images/toefl.png" alt="TOEFL" class="h-12">
+            <img src="images/duolingo.png" alt="Duolingo" class="h-12">
+            <img src="images/gre.png" alt="GRE" class="h-12">
+            <img src="images/sat.png" alt="SAT" class="h-12">
+        </div>
+    </div>
+</section> -->
+
+
+<!-- PARTNERS -->
+<!-- <section class="partners bg-white max-w-7xl m-auto">
+    <div class="">
+        <div class="flex animate-marquee">
+            <div class="box-border shadow-sm rounded-lg w-20 h-20">
+                <img src="images/britishcouncil.png" alt="">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- CONTACT US FORM -->
+<!-- <section class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid lg:grid-cols-[40%_60%] gap-10 items-start">
+        
+        <div class="px-12">
+            <h1 class="text-4xl font-semibold text-[#632024] mb-4">Got questions?</h1>
+            <p class="text-[#0a2458] font-semibold text-2xl leading-relaxed mb-8">
+                Confused, curious, or caffeinated? Let’s talk — we’ll sort it out together!
+            </p>
+        </div>
+
+        <div class="rounded-xl shadow-lg w-[450px] mx-auto">
+            <form action="" class="flex flex-col items-center justify-center px-5 py-5 gap-2">
+                <div>
+                    <input type="text" placeholder="Fullname:" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                </div>
+                <div>
+                    <input type="text" placeholder="Phone:" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                </div>           
+                <div>
+                    <input type="text" placeholder="Email:" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                </div>
+                <div>
+                    <select type="text" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                        <option value="">-- Choose a Test --</option>
+                        <option value="IELTS">IELTS</option>
+                        <option value="PTE">PTE</option>
+                        <option value="TOEFL">TOEFL</option>
+                        <option value="Duolingo">Duolingo</option>
+                        <option value="GRE">GRE</option>
+                        <option value="SAT">SAT</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="date"  placeholder="Preferred Date:" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                </div>
+                <div>
+                    <select aria-placeholder="" class="w-80 h-8 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                        <option value="">--- Select a Center ---</option>
+                        <option value="Kathmandu">Kathmandu</option>
+                        <option value="Pokhara">Pokhara</option>
+                        <option value="Biratnagar">Biratnagar</option>
+                        <option value="Chitwan">Chitwan</option>
+                    </select>
+                </div>                
+                <div>
+                    <textarea rows="4" class="w-80 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="">
+                    <button type="submit"
+                        class="w-40 bg-[#0a2458] text-white py-2 rounded-lg hover:bg-[#123172] transition duration-200">
+                        Submit for Inquiry
+                    </button>
+                </div>                
+
+            </form>
+        </div>
+
+    </div>
+</section> -->
+
+
+<!-- FOOTER -->
+
+<footer class="bg-[#110053] text-white py-10 max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 ">
+
+
+        <div class="ml-2">
+            <h1 class="text-[42px] font-semibold">BOOK your TEST</h1>
+
+                    <!-- IOS/ANDROID -->
+            <div class="ios-android mt-4 mb-3">
+                <h2 class="text-[18px] mb-3">Download Our App</h2>
+                <div class="flex gap-3">
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                    </a>
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="ml-10 mt-2">
+            <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
+            <div class="text-[14px]">
+                <p>Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                <p class="mt-2">+977-9812345678</p>
+                <p class="mb-2">support@bookmytest.com</p>
+                <a href="#" class="text-green-400 underline hover:text-red-600">Chat on WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="ml-10 mt-2">
+        <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
+        <ul class="-space-y-2 text-[14px]">
+            <li><a href="/" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+            <li><a href="/tests" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+            <li><a href="/how-it-works" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+            <li><a href="/download" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+            <li><a href="/help" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+            <li><a href="/contact" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="">
+        <h2 class="text-[24px] font-semibold mb-3 ml-10">Legal</h2>
+        <ul class="space-y-2 text-[14px] ml-10">
+            <li><a href="#" class="hover:text-orange-400">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-orange-400">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-orange-400">Refund & Reschedule Policy</a></li>
+        </ul>
+
+        <div class="ml-10">
+            <h1 class="text-lg font-semibold mb-1 mt-4">Follow Us On.</h1>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-orange-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-400"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+        © 2025 Book My Test. All rights reserved. <br>
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
