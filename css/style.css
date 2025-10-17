@@ -14,6 +14,7 @@ body, html{
 
 .heading {
     font-family: "Nunito", sans-serif;
+    color:#0a2458;
 }
 
 .sub_heading{
@@ -43,3 +44,6 @@ body, html{
 .animate-marquee:hover {
     animation-play-state: paused;
 }
+
+
+

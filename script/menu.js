@@ -17,4 +17,3 @@
         mobileMenu.classList.add('-translate-x-full');
         menuOverlay.classList.add('hidden');
     });
-
