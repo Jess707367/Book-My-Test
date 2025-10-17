@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="sticky top-0 z-50 bg-white shadow-md  py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <!-- Logo -->   
+        <a href="index.html" class="flex items-center ml-3">
+            <!-- <img src="images/logo.png" class="h-10 w-20 sm:h-10" alt="Book My Test Logo"> -->
+            <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+                BOOK MY TEST    
+            </span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="hidden lg:flex gap-8 text-md text-black">
+            <li class="hover:text-red-500 mt-2"><a href="index.html">Home</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="tests.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="how.html">How it Works</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="downloads.html">Downloads</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="help.html">Help</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-lg text-sm font-semibold">Get the App</a></li>
+
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+    <!-- Slide-In Mobile Menu -->
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"
+    >
+    <!-- Header Row: Logo + Close Button -->
+    <div class="flex items-center justify-between mb-6">
+        <a href="index.html" class="flex items-center gap-2">
+        <span class="font-bold text-[20px] font-serif text-[#0a2458] tracking-wider">
+            BOOK MY TEST
+        </span>
+        </a>
+
+        <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+        <!-- Links -->
+        <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
+            <a href="index.html" class="hover:text-red-500">Home</a>
+            <a href="./about_us.html" class="hover:text-red-500">About Us</a>
+            <a href="tests.html" class="hover:text-red-500">Tests</a>
+            <a href="how.html" class="hover:text-red-500">How it Works</a>
+            <a href="downloads.html" class="hover:text-red-500">Downloads</a>
+            <a href="help.html" class="hover:text-red-500">Help</a>
+            <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
+        </nav>
+    </aside>
+
+
+    <!-- About us -->
+    <section class="bg-gray-50 text-gray-800 ">
+
+    <!-- Heading -->
+    <div class="relative bg-[#0a2458] text-white py-20 px-6 text-center">
+        <h1 class="text-5xl font-bold mb-4">About Us</h1>
+        <p class="text-lg max-w-2xl mx-auto">
+        We make global test booking simple, secure, and stress-free — so you can focus on achieving your dreams.
+        </p>
+    </div>
+
+    <!-- Who We Are -->
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <h2 class="text-3xl font-semibold text-[#0a2458] mb-4">Who We Are</h2>
+            <p class="text-gray-600 leading-relaxed">
+            We are a passionate team of educators and developers dedicated to helping learners
+            book their international tests with ease. From TOEFL and GRE to SAT and LanguageCert,
+            our platform simplifies every step — from discovering dates to making secure payments.
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <img src="images/about-team.png" alt="Team" class="rounded-3xl shadow-lg max-h-72 object-cover">
+        </div>
+        </div>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold text-[#0a2458] mb-8">Our Mission & Vision</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 w-3/4 mx-auto">
+                <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition">
+                    <h3 class="text-2xl font-semibold text-[#0a2458] mb-2">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To empower students with a smooth, transparent, and accessible platform for booking
+                        global tests — helping them step confidently into their academic future.
+                    </p>
+                </div>
+                <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition">
+                    <h3 class="text-2xl font-semibold text-[#0a2458] mb-2">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To become the most trusted and student-friendly platform for international exam registration
+                        and preparation across the globe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Meet Our Team Section -->
+    <section class="bg-[#f1f5f9] py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold text-[#0a2458] mb-12">Meet Our Team</h2>
+
+            <div class="flex flex-wrap justify-center gap-12">
+
+            <!-- Member 1 -->
+            <div class="flex flex-col items-center">
+                <div class="w-40 h-40 rounded-full shadow-xl overflow-hidden hover:scale-105 transition">
+                    <img src="images/team1" alt="team1" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-xl font-semibold text-[#0a2458] mt-4">Alex Jenner</h4>
+                <p class="text-gray-600 text-sm">Operations Manager</p>
+                <p class="text-gray-500 text-xs mt-1 max-w-[180px]">Handles scheduling, test center coordination, and logistics.</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="flex flex-col items-center">
+                <div class="relative w-36 h-36 rounded-full overflow-hidden shadow-xl hover:scale-105 transition">
+                    <img src="images/team2.jpeg" alt="team2" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-xl font-semibold text-[#0a2458] mt-4">Olivia Bennett</h4>
+                <p class="text-gray-600 text-sm">Lead Developer</p>
+                <p class="text-gray-500 text-xs mt-1 max-w-[180px]">Ensuring fast, secure, and user-friendly experiences.</p>
+            </div>
+
+            <!-- Member 3 (Center) -->
+            <div class="flex flex-col items-center">
+                <div class="w-48 h-48 rounded-full overflow-hidden hover:scale-105 transition">
+                    <img src="images/team3.jpeg" alt="team3" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-xl font-semibold text-[#0a2458] mt-4">Ethan Williams</h4>
+                <p class="text-gray-600 text-sm">Founder & CEO</p>
+                <p class="text-gray-500 text-xs mt-1 max-w-[180px]">Leads the vision of Book My Test.</p>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="flex flex-col items-center">
+                <div class="relative w-36 h-36 rounded-full overflow-hidden shadow-xl hover:scale-105 transition">
+                    <img src="images/team4.jpg" alt="team4" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-xl font-semibold text-[#0a2458] mt-4">Emma Harrisons</h4>
+                <p class="text-gray-600 text-sm">Student Support</p>
+                <p class="text-gray-500 text-xs mt-1 max-w-[180px]">Providing 24/7 assistance to guide learners smoothly.</p>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="flex flex-col items-center">
+                <div class="relative w-40 h-40 rounded-full overflow-hidden shadow-xl hover:scale-105 transition">
+                    <img src="images/team5.jpeg" alt="team5" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-xl font-semibold text-[#0a2458] mt-4">Henry Carter</h4>
+                <p class="text-gray-600 text-sm">Marketing Lead</p>
+                <p class="text-gray-500 text-xs mt-1 max-w-[180px]">Spreading awareness and connecting students globally.</p>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisors & Partners -->
+    <div class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold text-[#0a2458] mb-10">Advisors & Partners</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg transition">
+                    <h4 class="font-semibold text-lg text-[#0a2458] mb-2">GlobalEdu Alliance</h4>
+                    <p class="text-sm text-gray-600">Official partner supporting test center collaborations and global reach.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg transition">
+                    <h4 class="font-semibold text-lg text-[#0a2458] mb-2">Nepal Education Board</h4>
+                    <p class="text-sm text-gray-600">Providing verified test information and authentic updates for local students.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg transition">
+                    <h4 class="font-semibold text-lg text-[#0a2458] mb-2">SmartPay Systems</h4>
+                    <p class="text-sm text-gray-600">Secure payment gateway partner ensuring trusted transactions globally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="bg-[#f1f5f9] py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold text-[#0a2458] mb-8">Why Choose Us</h2>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
+            <div class="bg-white rounded-3xl shadow-md p-6 hover:-translate-y-2 transition-all">
+            <i class="fa-solid fa-calendar-check text-3xl text-[#0a2458] mb-3"></i>
+            <h4 class="font-semibold text-lg">Easy Booking</h4>
+            <p class="text-gray-600 text-sm">Book your preferred test date in just a few clicks.</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-md p-6 hover:-translate-y-2 transition-all">
+            <i class="fa-solid fa-globe text-3xl text-[#0a2458] mb-3"></i>
+            <h4 class="font-semibold text-lg">Trusted Centers</h4>
+            <p class="text-gray-600 text-sm">Partnered with verified international testing centers.</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-md p-6 hover:-translate-y-2 transition-all">
+            <i class="fa-solid fa-lock text-3xl text-[#0a2458] mb-3"></i>
+            <h4 class="font-semibold text-lg">Secure Payments</h4>
+            <p class="text-gray-600 text-sm">Your data and transactions are fully protected.</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-md p-6 hover:-translate-y-2 transition-all">
+            <i class="fa-solid fa-headset text-3xl text-[#0a2458] mb-3"></i>
+            <h4 class="font-semibold text-lg">24/7 Support</h4>
+            <p class="text-gray-600 text-sm">We’re here to guide you every step of the way.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold text-[#0a2458] mb-10">What Students Say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-3xl shadow-md bg-gray-50">
+            <p class="text-gray-600 italic mb-4">“Booking my TOEFL test was super easy! Loved how smooth the process was.”</p>
+            <h4 class="font-semibold text-[#0a2458]">- Anisha, Kathmandu</h4>
+            </div>
+            <div class="p-6 rounded-3xl shadow-md bg-gray-50">
+            <p class="text-gray-600 italic mb-4">“Finally a platform that simplifies all test details in one place!”</p>
+            <h4 class="font-semibold text-[#0a2458]">- Rohan, Pokhara</h4>
+            </div>
+            <div class="p-6 rounded-3xl shadow-md bg-gray-50 ">
+            <p class="text-gray-600 italic mb-4">“Secure payments and instant confirmation — highly recommended.”</p>
+            <h4 class="font-semibold text-[#0a2458]">- Sneha, Lalitpur</h4>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Registration Details -->
+    <div class="bg-[#f1f5f9] py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold text-[#0a2458] mb-6">Registration & Legal Details</h2>
+            <p class="text-gray-600 mb-2">Company Name: <span class="font-semibold text-[#0a2458]">Book Your Test</span></p>
+            <p class="text-gray-600 mb-2">Registration No: <span class="font-semibold">2025/07/NEB-1423</span></p>
+            <p class="text-gray-600 mb-2">Registered Office: <span class="font-semibold">Putalisadak, Kathmandu, Nepal</span></p>
+            <p class="text-gray-600">Licensed by Nepal Ministry of Education & Technology for digital learning solutions.</p>
+        </div>
+    </div>
+
+        <!-- Office Location -->
+    <div class="bg-white py-16">
+        <div class="max-w-6xl mx-auto text center">
+            <h2 class="text-3xl font-semibold text-[#0a2458] text-center mb-1">Our Office Location</h2>
+            <p class="text-gray-600 text-center mb-5">Visit us or reach out to our support team at our Kathmandu office.</p>
+
+            <div class="w-full h-[400px] rounded-2xl overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.273983654453!2d85.32022697535476!3d27.70523592646048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1909f15a46b5%3A0xd749a7c3791b09df!2sPutalisadak%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1717837460130!5m2!1sen!2snp"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" >
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CTA -->
+    <!-- <div class="bg-[#0a2458] text-white py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Ready to Book Your Test?</h2>
+        <p class="mb-6 text-gray-200">Start your journey to success with a single click.</p>
+        <a href="tests.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition">
+        Explore Tests
+        </a>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="bg-[#110053] text-white py-10 ">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+            <div class="ml-3">
+                <h1 class="text-[42px] font-semibold">BOOK your TEST</h1>
+
+                <!-- IOS/ANDROID -->
+                <div class="ios-android mt-4 mb-3">
+                    <h2 class="text-[18px] mb-3">Download Our App</h2>
+                    <div class="flex gap-3">
+                        <a href="#">
+                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                        </a>
+                        <a href="#">
+                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="md:ml-10 ml-3">
+                <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
+                <div class="text-[14px]">
+                    <p>Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                    <p class="mt-2">+977-9812345678</p>
+                    <p class="mb-2">support@bookmytest.com</p>
+                    <a href="#" class="text-green-400 underline hover:text-red-600">Chat on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="md:ml-10 ml-3">
+            <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
+            <ul class="-space-y-2 text-[14px]">
+                <li><a href="/" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+                <li><a href="/tests" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+                <li><a href="/how-it-works" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+                <li><a href="/download" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+                <li><a href="/help" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+                <li><a href="/contact" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+            </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="ml-3">
+            <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
+            <ul class="space-y-2 text-[14px] md:ml-10">
+                <li><a href="#" class="hover:text-orange-400">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-orange-400">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-orange-400">Refund & Reschedule Policy</a></li>
+            </ul>
+
+            <!-- Social -->
+            <div class="md:ml-10">
+                <h1 class="text-lg font-semibold mb-1 mt-4">Follow Us On.</h1>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" class="hover:text-orange-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-orange-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-orange-400"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+            © 2025 Book My Test. All rights reserved. <br>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
+    <script src="script/menu.js"></script>
+
+</body>
+</html>
