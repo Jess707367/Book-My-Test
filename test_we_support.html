@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test We Support</title>
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-                                        <!-- NAV BAR -->
+
+<!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
         <!-- Logo -->   
         <a href="index.html" class="flex items-center ml-3">
-            <!-- <img src="images/logo.png" class="h-10 w-20 sm:h-10" alt="Book My Test Logo"> -->
-            <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
+            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
                 BOOK MY TEST    
-            </span>
+            </span> -->
         </a>
 
         <!-- Hamburger Button -->
@@ -29,15 +35,17 @@
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="hidden lg:flex gap-8 text-md text-black">
+        <ul class="hidden lg:flex gap-8 text-md">
             <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./tests.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact</a></li>
-            <li class="w-fit hover:text-red-500 cursor-pointer"> <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-lg text-sm font-semibold">Get the App</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> 
+                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
+            </li>
 
         </ul>
         </div>
@@ -47,14 +55,10 @@
     <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
 
     <!-- Slide-In Mobile Menu -->
-    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"
-    >
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
     <!-- Header Row: Logo + Close Button -->
     <div class="flex items-center justify-between mb-6">
         <a href="index.html" class="flex items-center gap-2">
-        <span class="font-bold text-[20px] font-serif text-[#0a2458] tracking-wider">
-            BOOK MY TEST
-        </span>
         </a>
 
         <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -66,192 +70,201 @@
         <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
             <a href="./index.html" class="hover:text-red-500">Home</a>
             <a href="./about_us.html" class="hover:text-red-500">About Us</a>
-            <a href="./tests.html" class="hover:text-red-500">Tests</a>
-            <a href="./how-it_works.html" class="hover:text-red-500">How it Works</a>
+            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
+            <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
             <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
-            <a href="./help.html" class="hover:text-red-500">Help</a>
+            <a href="help.html" class="hover:text-red-500">Help</a>
             <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
         </nav>
     </aside>
+
 
 <section class="py-10 bg-gray-50 mb-10">
     <div class="max-w-6xl mx-auto">
 
         <!-- Heading -->
-        <div class="text-4xl font-bold text-center mb-16 text-[#0a2458]">
-        <h1>Tests We Support</h1>
+        <div class="text-4xl main_heading text-center mb-16 text-[#0a2458]">
+        <h1><span class="text-[#ff805d] underline underline-offset-4">Tests</span> We Support</h1>
         </div>
 
         <!-- Grid -->
         <div class="grid gap-8 md:grid-cols-4 sm:grid-cols-2 justify-center">
 
-        <!-- IELTS -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">IELTS</h2>
-                <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1 rounded-lg">Academic / General</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                A leading English test for study, work, or migration — accepted in 140+ countries worldwide.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs 45 min</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: Band 1–9</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Focus on pronunciation & time control</li>
-            </ul>
-            <a href="/tests/ielts" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- IELTS -->
+<div class="bg-white text-[#6d3471] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px]">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">IELTS</h2>
+            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1 rounded-lg">Academic / General</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            A leading English test for study, work, or migration — accepted in 140+ countries worldwide.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs 45 min</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Focus on pronunciation & time control</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="./test.html" class="bg-[#1e366b] text-white rounded-full py-2 px-4 font-medium hover:bg-[#ffa48d] hover:scale-105 hover:shadow-lg 
+                            transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        <!-- PTE -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">PTE</h2>
-                <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded-lg">Academic</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                Fast, computer-based test trusted by universities for English proficiency proof.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 3 hrs</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: 10–90</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Practice AI-based evaluation samples</li>
-            </ul>
-            <a href="/tests/pte" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- PTE -->
+<div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">PTE</h2>
+            <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded-lg">Academic</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            Fast, computer-based test trusted by universities for English proficiency proof.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 3 hrs</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Practice AI-based evaluation samples</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/pte" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-4 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        <!-- TOEFL -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">TOEFL iBT</h2>
-                <span class="bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded-lg">Academic</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                A trusted English language test for global universities — online or in test centers.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 3 hrs 30 min</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: 0–120</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Practice mock tests for pacing</li>
-            </ul>
-            <a href="/tests/toefl" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- TOEFL -->
+<div class="bg-white text-[#6d3471] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">TOEFL iBT</h2>
+            <span class="bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded-lg">Academic</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            A trusted English language test for global universities — online or in test centers.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 3 hrs 30 min</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Practice mock tests for pacing</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/toefl" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-4 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        <!-- Duolingo -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">Duolingo</h2>
-                <span class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1 rounded-lg">Online</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                A quick and affordable English test — accepted by 4000+ institutions globally.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: ~1 hr</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: 10–160</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Take sample tests before booking</li>
-            </ul>
-            <a href="/tests/duolingo" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- Duolingo -->
+<div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">Duolingo</h2>
+            <span class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1 rounded-lg">Online</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            A quick and affordable English test — accepted by 4000+ institutions globally.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: ~1 hr</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Take sample tests before booking</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/duolingo" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-4 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        
-        <!-- GRE -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">GRE</h2>
-                <span class="bg-pink-100 text-pink-700 text-xs font-medium px-2 py-1 rounded-lg">Graduate</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                Required for many graduate programs — measures verbal, quantitative & writing skills.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: ~2 hrs</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: 260-340</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Build vocab & practice timed tests.</li>
-
-            </ul>
-            <a href="/tests/gre" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- GRE -->
+<div class="bg-white text-[#6d3471] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">GRE</h2>
+            <span class="bg-pink-100 text-pink-700 text-xs font-medium px-2 py-1 rounded-lg">Graduate</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            Required for many graduate programs — measures verbal, quantitative & writing skills.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: ~2 hrs</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Build vocab & practice timed tests.</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/gre" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-4 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        <!-- SAT -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">SAT</h2>
-                <span class="bg-teal-100 text-teal-700 text-xs font-medium px-2 py-1 rounded-lg">Undergraduate</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                Widely used for college admissions — evaluates math, reading, and writing skills.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs 14 min</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Scoring: 400-1600</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Revise math & grammar daily.</li>
-
-
-
-            </ul>
-            <a href="/tests/sat" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- SAT -->
+<div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">SAT</h2>
+            <span class="bg-teal-100 text-teal-700 text-xs font-medium px-2 py-1 rounded-lg">Undergraduate</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            Widely used for college admissions — evaluates math, reading, and writing skills.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs 14 min</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Revise math & grammar daily.</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/sat" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-4 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
         </div>
+    </div>
+</div>
 
-        <!-- LanguageCert -->
-        <div class="bg-white text-[#0a2458] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
-            <div class="p-7 flex flex-col">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold">LanguageCert</h2>
-                <span class="bg-indigo-100 text-indigo-700 text-xs font-medium px-2 py-1 rounded-lg">International</span>
-            </div>
-            <p class="text-[15px] text-gray-700 mb-4">
-                Recognized English qualification offering flexible online and offline test options.
-            </p>
-            <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
-                <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs</li>
-                <li><i class="fa-solid fa-chart-line mr-1 text-[#0a2458]"></i> Levels: A1-C2</li>
-                <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Speak clearly — fluency matters.</li>
-
-            </ul>
-            <a href="/tests/languagecert" class="mt-5 inline-flex items-center justify-center w-full bg-[#0a2458] hover:bg-[#142e70] text-white rounded-xl py-2 font-medium transition">
+<!-- LanguageCert -->
+<div class="bg-white text-[#6d3471] rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-200 w-[280px] mx-auto">
+    <div class="p-7 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">LanguageCert</h2>
+            <span class="bg-indigo-100 text-indigo-700 text-xs font-medium px-2 py-1 rounded-lg">International</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+            Recognized English qualification offering flexible online and offline test options.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 border-t border-gray-300 pt-3">
+            <li><i class="fa-regular fa-clock mr-1 text-[#0a2458]"></i> Duration: 2 hrs</li>
+            <li><i class="fa-regular fa-lightbulb mr-1 text-[#0a2458]"></i> Tip: Speak clearly — fluency matters.</li>
+        </ul>
+        <div class="mt-4 flex justify-center">
+            <a href="/tests/languagecert" class="bg-[#1e366b] hover:bg-[#ffa48d] text-white rounded-full py-2 px-6 font-medium 
+                        hover:scale-105 hover:shadow-lg transition-all duration-300">
                 Learn More →
             </a>
-            </div>
-
         </div>
+    </div>
+</div>
+
+
     </div>
 </section>
 
-<!-- FOOTER -->
-
+    <!-- FOOTER -->
     <footer class="bg-[#110053] text-white py-10 ">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
-            <div class="">
-                <h1 class="text-[42px] font-semibold">BOOK your TEST</h1>
+            <div class="ml-3 md:ml-0">
+                <h1 class="heading">BOOK your TEST</h1>
 
                 <!-- IOS/ANDROID -->
-                <div class="ios-android mt-4 mb-3">
-                    <h2 class="text-[18px] mb-3">Download Our App</h2>
+                <div class="mt-4 mb-3">
+                    <h2 class="sub_heading text-[18px] mb-3">Download Our App</h2>
                     <div class="flex gap-3">
                         <a href="#">
                             <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
@@ -267,10 +280,10 @@
             <div class="md:ml-10 ml-3">
                 <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
                 <div class="text-[14px]">
-                    <p>Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                    <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
                     <p class="mt-2">+977-9812345678</p>
                     <p class="mb-2">support@bookmytest.com</p>
-                    <a href="#" class="text-green-400 underline hover:text-red-600">Chat on WhatsApp</a>
+                    <a href="#" class="text-green-400 underline hover:text-[#ff805d]">Chat on WhatsApp</a>
                 </div>
             </div>
 
@@ -278,12 +291,12 @@
             <div class="md:ml-10 ml-3">
             <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
             <ul class="-space-y-2 text-[14px]">
-                <li><a href="./index.html" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
-                <li><a href="./test_we_support.html" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
-                <li><a href="./how-it-works" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
-                <li><a href="./download_app.html" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
-                <li><a href="./help.html" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
-                <li><a href="./contact" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+                <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+                <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+                <li><a href="/how-it-works" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+                <li><a href="./download_app.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+                <li><a href="./help.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+                <li><a href="./contact" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
             </ul>
             </div>
 
@@ -291,19 +304,19 @@
             <div class="ml-3">
             <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
             <ul class="space-y-2 text-[14px] md:ml-10">
-                <li><a href="./privacy_policy.html" class="hover:text-orange-400">Privacy Policy</a></li>
-                <li><a href="./terms_of_service.html" class="hover:text-orange-400">Terms of Service</a></li>
-                <li><a href="./refund.html" class="hover:text-orange-400">Refund & Reschedule Policy</a></li>
+                <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
+                <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
+                <li><a href="./refund.html" class="hover:text-orange-500">Refund & Reschedule Policy</a></li>
             </ul>
 
             <!-- Social -->
             <div class="md:ml-10">
-                <h1 class="text-lg font-semibold mb-1 mt-4">Follow Us On.</h1>
-                    <div class="flex space-x-4 text-2xl">
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin-in"></i></a>
+                <h1 class="text-lg font-semibold mb-1 mt-4 sub_heading">Follow Us On.</h1>
+                    <div class="flex space-x-4 text-lg">
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             </div>
@@ -314,7 +327,6 @@
             © 2025 Book My Test. All rights reserved. <br>
         </div>
     </footer>
-
 
 
 <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>

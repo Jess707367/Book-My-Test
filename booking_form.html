@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- NAV BAR -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <!-- Logo -->   
+        <a href="index.html" class="flex items-center ml-3">
+            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
+            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+                BOOK MY TEST    
+            </span> -->
+        </a>
+
+        <!-- Hamburger Button -->
+        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="hidden lg:flex gap-8 text-md">
+            <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> 
+                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+    <!-- Slide-In Mobile Menu -->
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
+    <!-- Header Row: Logo + Close Button -->
+    <div class="flex items-center justify-between mb-6">
+        <a href="index.html" class="flex items-center gap-2">
+        </a>
+
+        <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+        <!-- Links -->
+        <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
+            <a href="./index.html" class="hover:text-red-500">Home</a>
+            <a href="./about_us.html" class="hover:text-red-500">About Us</a>
+            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
+            <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
+            <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
+            <a href="help.html" class="hover:text-red-500">Help</a>
+            <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
+        </nav>
+    </aside>
+
+    <section class="">
+    <div class="max-w-6xl mx-auto">
+        <div class="sm:px-2 md:px-32 py-16">
+            <div class="pb-12">
+                <h2 class="text-3xl font-bold text-[#0a2458] sub_heading text-center pb-1">
+                    <span class="text-[#ff805d]">BOOK</span> Your Test
+                </h2>
+                <p class="text-gray-500 text-center">
+                    Reserve your slot quickly and get ready for success
+                </p>
+            </div>
+            
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 border-1 shadow-lg px-12 py-12 mx-3">
+                <!-- Name -->
+                <div class="flex flex-col">
+                    <label for="name" class="text-gray-700 font-medium mb-2">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe"
+                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500"/>
+                </div>
+                
+                <!-- Email -->
+                <div class="flex flex-col">
+                    <label for="email" class="text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" placeholder="john@example.com"
+                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500" />
+                </div>
+                
+                <!-- Phone -->
+                <div class="flex flex-col">
+                    <label for="phone" class="text-gray-700 font-medium mb-2">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+977 234 567 8901"
+                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500" />
+                </div>
+                
+                <!-- Select Test -->
+                    <div class="flex flex-col">
+                        <label for="test" class="text-gray-700 font-medium mb-2">Select Test</label>
+                        <select class="py-2 px-4 border-1 border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400">
+                            <option disabled selected class="text-gray-500">Choose a Test</option>
+                            <option value="IELTS">IELTS</option>
+                            <option value="PTE">PTE</option>
+                            <option value="TOEFL">TOEFL</option>
+                            <option value="Duolingo">Duolingo</option>
+                            <option value="GRE">GRE</option>
+                            <option value="SAT">SAT</option>
+                        </select>
+                    </div>
+                
+                <!-- Date -->
+                <div class="flex flex-col">
+                    <label for="date" class="text-gray-700 font-medium mb-2">Preferred Date</label>
+                    <input type="date" id="date"
+                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400" />
+                </div>
+                
+                <!-- Time Slot -->
+                <div class="flex flex-col">
+                    <label for="time" class="text-gray-700 font-medium mb-2">Time Slot</label>
+                    <select id="time"
+                            class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400">
+                    <option disabled selected>Choose a time slot</option>
+                    <option>10:00 AM - 12:00 PM</option>
+                    <option>1:00 PM - 3:00 PM</option>
+                    <option>4:00 PM - 6:00 PM</option>
+                    </select>
+                </div>
+                
+                <!-- Notes -->
+                <div class="flex flex-col md:col-span-2">
+                    <label for="notes" class="text-gray-700 font-medium mb-2">Additional Notes</label>
+                    <textarea id="notes" rows="4" placeholder="Any specific requests..."
+                            class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500"></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="md:col-span-2 text-center ">
+                    <a type="submit" href="./book.html" class="bg-[#ff805d] hover:bg-[#ff6a40] text-white font-semibold px-12 py-2 rounded-lg transition">
+                        Book Now
+                    </a>
+                    <!-- Message -->
+                    <p id="bookMsg" class="text-green-600 font-semibold mt-4 hidden">
+                        ✅ Your test has been booked!
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#110053] text-white py-10 ">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+        <div class="ml-3 md:ml-0">
+            <h1 class="heading">BOOK your TEST</h1>
+
+            <!-- IOS/ANDROID -->
+            <div class="mt-4 mb-3">
+                <h2 class="sub_heading text-[18px] mb-3">Download Our App</h2>
+                <div class="flex gap-3">
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                    </a>
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="md:ml-10 ml-3">
+            <h2 class="text-[24px] mb-3">Contact Us</h2>
+            <div class="text-[14px]">
+                <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                <p class="mt-2">+977-9812345678</p>
+                <p class="mb-2">support@bookmytest.com</p>
+                <a href="#" class="text-green-400 underline hover:text-[#ff805d]">Chat on WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:ml-10 ml-3">
+        <h2 class="text-[24px] mb-3">Quick Links</h2>
+        <ul class="-space-y-2 text-[14px]">
+            <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+            <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+            <li><a href="/how-it-works" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+            <li><a href="./download_app.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+            <li><a href="./help.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+            <li><a href="./contact" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="ml-3">
+        <h2 class="sub_heading mb-3 md:ml-10">Legal</h2>
+        <ul class="space-y-2 text-[14px] md:ml-10">
+            <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
+            <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
+            <li><a href="./refund.html" class="hover:text-orange-500">Refund & Reschedule Policy</a></li>
+        </ul>
+
+        <!-- Social -->
+        <div class="md:ml-10">
+            <h1 class="text-lg font-semibold mb-1 mt-4 sub_heading">Follow Us On.</h1>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+        © 2025 Book My Test. All rights reserved. <br>
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
+<script src="script/menu.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>

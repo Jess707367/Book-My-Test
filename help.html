@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Book My Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .category-section {
+            scroll-margin-top: 2rem;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .chevron {
+            transform: rotate(180deg);
+        }
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- NAV BAR -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <!-- Logo -->   
+        <a href="index.html" class="flex items-center ml-3">
+            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
+            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+                BOOK MY TEST    
+            </span> -->
+        </a>
+
+        <!-- Hamburger Button -->
+        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="hidden lg:flex gap-8 text-md text-black  ">
+            <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> 
+                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+    <!-- Slide-In Mobile Menu -->
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
+    <!-- Header Row: Logo + Close Button -->
+    <div class="flex items-center justify-between mb-6">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
+        </a>
+
+        <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+        <!-- Links -->
+        <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
+            <a href="./index.html" class="hover:text-red-500">Home</a>
+            <a href="./about_us.html" class="hover:text-red-500">About Us</a>
+            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
+            <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
+            <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
+            <a href="help.html" class="hover:text-red-500">Help</a>
+            <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
+        </nav>
+    </aside>
+
+    
+
+<section class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-[60%_40%] gap-0 items-center justify-end">
+        
+        <!-- Left: Text -->
+        <div class="px-2">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#0a2458] mb-4 leading-tight">
+            Frequently Asked Questions
+            </h1>
+            <p class="text-gray-600 text-lg max-w-md">
+            Have questions about booking your test, rescheduling, or payments?  
+            We’ve got all your answers here.
+            </p>
+        </div>
+
+        <div class="hidden md:flex justify-center object-contain"> 
+            <img src="images/FAQ.png" alt="Help Center" class="w-3/4 lg:w-full max-h-96 object-contain" onerror="this.style.display='none'"> 
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="pb-16 px-4 text-center">
+                <h2 class="text-3xl sm:text-3xl font-bold text-[#0a2458] sub_heading leading-snug">
+                    Answers to <span class="text-[#ff805d]">YOURS</span> Questions
+                </h2>
+            </div>
+
+
+            <div class="px-3">
+                            <!-- Booking Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold sticky top-8 text-[#0a2458] sub_heading">Booking</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How do I book a test through Book My Test?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Simply visit our website, select your preferred test, choose a center and date, fill in your details, and complete the payment. You'll receive a confirmation email with your booking details.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Can I choose my preferred center and date?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Yes! You can browse available test centers and dates during the booking process and select the one that works best for you.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">What documents are required during booking?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            You'll need a valid government-issued ID (passport, citizenship card, or driving license) and your passport-sized photograph. Make sure your ID matches the name you use during booking.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Rescheduling Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold  text-[#0a2458] sub_heading sticky top-8">Rescheduling</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How can I change my test date?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Log into your account, go to "My Bookings", select the test you want to reschedule, and choose a new date from the available slots. Rescheduling fees may apply.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Are there rescheduling fees?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Yes, rescheduling fees vary depending on how close to the test date you make the change. Early rescheduling (7+ days before) typically has lower fees.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How far in advance can I reschedule?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            You can reschedule up to 48 hours before your test date. Last-minute changes may not be possible depending on the test provider's policy.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Refunds Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold  text-[#0a2458] sub_heading sticky top-8">Refunds</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Am I eligible for a refund if I cancel?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Refund eligibility depends on when you cancel. Cancellations made 7+ days before the test may receive a partial refund. Cancellations within 48 hours are typically non-refundable.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How long does the refund take to process?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Approved refunds are processed within 7-10 business days. The time for the funds to appear in your account depends on your bank or payment provider.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Where can I check my refund status?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            You can check your refund status in the "My Bookings" section of your account or contact our support team for an update.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold text-[#0a2458] sub_heading sticky top-8">Results</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">When will my test results be available?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Result timelines vary by test type. Most results are available within 5-13 business days. You'll receive an email notification when your results are ready.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How can I download or print my score report?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Log into your account, go to "My Results", and click the download button next to your test. You can save it as a PDF and print it directly.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Who can I contact if my results are delayed?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            If your results are delayed beyond the expected timeframe, please contact our support team via email at support@bookmytest.com or call us at 01-4000000.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Payment Issues Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold text-[#0a2458] sub_heading sticky top-8">Payment Issues</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">My payment failed — what should I do?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            First, check if the amount was deducted from your account. If yes, wait 24 hours for it to be reflected. If not, try booking again with a different payment method or contact your bank.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How do I confirm my payment was successful?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            You'll receive a confirmation email immediately after successful payment. You can also check your booking status in the "My Bookings" section of your account.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">Can I pay using eSewa or Khalti?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Yes! We accept payments through eSewa, Khalti, and major credit/debit cards. Simply select your preferred payment method during checkout.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Account Section -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold text-[#0a2458] sub_heading sticky top-8">Account</h2>
+                </div>
+                <div class="lg:col-span-9 space-y-3">
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How can I reset my password?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Click on "Forgot Password" on the login page, enter your registered email, and you'll receive a password reset link. Follow the instructions to create a new password.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How do I update my personal details?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            Log into your account, go to "Profile Settings", and update your information. Make sure to save changes before exiting.
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-200 rounded-lg border border-gray-300 overflow-hidden group">
+                        <summary class="flex justify-between items-center p-3 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-medium text-[#2c3e50]">How can I delete my account?</span>
+                            <i class="fas fa-chevron-down text-[#ff805d] chevron"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 text-gray-700 leading-relaxed">
+                            To delete your account, please contact our support team at support@bookmytest.com with your account details. Note that this action is permanent and cannot be undone.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-[#110053] text-white py-10 ">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+        <div class="ml-3 md:ml-0">
+            <h1 class="heading">BOOK your TEST</h1>
+
+            <!-- IOS/ANDROID -->
+            <div class="mt-4 mb-3">
+                <h2 class="sub_heading text-[18px] mb-3">Download Our App</h2>
+                <div class="flex gap-3">
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                    </a>
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="md:ml-10 ml-3">
+            <h2 class="text-[24px] mb-3">Contact Us</h2>
+            <div class="text-[14px]">
+                <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                <p class="mt-2">+977-9812345678</p>
+                <p class="mb-2">support@bookmytest.com</p>
+                <a href="#" class="text-green-400 underline hover:text-[#ff805d]">Chat on WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:ml-10 ml-3">
+        <h2 class="text-[24px] mb-3">Quick Links</h2>
+        <ul class="-space-y-2 text-[14px]">
+            <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+            <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+            <li><a href="/how-it-works" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+            <li><a href="./download_app.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+            <li><a href="./help.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+            <li><a href="./contact" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="ml-3">
+        <h2 class="sub_heading mb-3 md:ml-10">Legal</h2>
+        <ul class="space-y-2 text-[14px] md:ml-10">
+            <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
+            <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
+            <li><a href="./refund.html" class="hover:text-orange-500">Refund & Reschedule Policy</a></li>
+        </ul>
+
+        <!-- Social -->
+        <div class="md:ml-10">
+            <h1 class="text-lg font-semibold mb-1 mt-4 sub_heading">Follow Us On.</h1>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+        © 2025 Book My Test. All rights reserved. <br>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
+<script src="script/menu.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>

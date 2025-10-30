@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-
     <link rel="stylesheet" href="css/style.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     
-                                            <!-- NAV BAR -->
+
+<!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
         <!-- Logo -->   
         <a href="index.html" class="flex items-center ml-3">
-            <!-- <img src="images/logo.png" class="h-10 w-20 sm:h-10" alt="Book My Test Logo"> -->
-            <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
+            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
                 BOOK MY TEST    
-            </span>
+            </span> -->
         </a>
 
         <!-- Hamburger Button -->
@@ -32,15 +31,17 @@
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="hidden lg:flex gap-8 text-md text-black">
+        <ul class="hidden lg:flex gap-8 text-md">
             <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./tests.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact</a></li>
-            <li class="w-fit hover:text-red-500 cursor-pointer"> <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-lg text-sm font-semibold">Get the App</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> 
+                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
+            </li>
 
         </ul>
         </div>
@@ -50,14 +51,10 @@
     <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
 
     <!-- Slide-In Mobile Menu -->
-    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"
-    >
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
     <!-- Header Row: Logo + Close Button -->
     <div class="flex items-center justify-between mb-6">
         <a href="index.html" class="flex items-center gap-2">
-        <span class="font-bold text-[20px] font-serif text-[#0a2458] tracking-wider">
-            BOOK MY TEST
-        </span>
         </a>
 
         <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -69,228 +66,262 @@
         <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
             <a href="./index.html" class="hover:text-red-500">Home</a>
             <a href="./about_us.html" class="hover:text-red-500">About Us</a>
-            <a href="./tests.html" class="hover:text-red-500">Tests</a>
+            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
             <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
             <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
-            <a href="./help.html" class="hover:text-red-500">Help</a>
+            <a href="help.html" class="hover:text-red-500">Help</a>
             <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
         </nav>
     </aside>
 
 
-    <!-- header -->
-<section class="bg-gray-400">
-    <div class="max-w-6xl mx-auto py-4 ">
-                <h2 class="text-4xl font-bold text-center mb-2 heading">Contact Us</h2>
+<!-- header -->
+<section class="bg-gray-100">
+    <div class="max-w-6xl mx-auto py-10">
+                <h2 class="text-3xl font-bold text-[#0a2458] text-center mb-2 sub_heading">Contact Us</h2>
                 <div class="text-center sub_heading font-semibold text-sm">
-                    <a href="index.html">Home / </a>
-                    <a href="">Contact</a>
+                    <a href="index.html" class="hover:text-[#ff805d]">Home</a>
+                    <a href="">/</a>
+                    <a href="/contact_us.html" class="hover:text-[#ff805d]">Contact</a>
                 </div>
             </div>
 </section>
 
-    <!-- contact us -->
-    <section class="">
-        <div class="max-w-6xl mx-auto">     
-        
-            <div class=" md:grid lg:grid-cols-2 gap-10 items-center relative max-w-6xl mx-auto py-5">    
-                <!-- Left -->
-                <div class="space-y-5">
-                    <h1 class="text-4xl sm:text-5xl font-semibold text-[#0a2458] heading px-2 py-10">
-                        Questions? Get in Touch!!
-                    </h1>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+<!-- contact us -->
+<section class="">
+    <div class="max-w-6xl mx-auto">     
+        <div class="md:grid lg:grid-cols-2 gap-10 items-center relative max-w-6xl mx-auto py-5">    
+            
+            <!-- Left -->
+            <div class="space-y-5">
+                <div class="px-4 pb-4">
+                    <h1 class=" text-[#0a2458] text-3xl mb-4 font-bold sub_heading">Got <span class="text-[#ff805d]">QUESTIONS?</span> Get in touch.</h1>
+                    <p class="text-gray-700 normal_text">
+                        Get connected through our contacts.
+                    </p>
+                </div>
+                <!-- Centered cards -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center justify-items-center">
                         <!-- Phone -->
-                        <div class="flex flex-col items-center py-3 md:shadow-lg">
+                        <div class="flex flex-col items-center py-3 shadow-lg w-[250px] hover:-translate-y-2 transition-all duration-300">
                             <div class="text-3xl mb-2">
-                            <i class="fas fa-phone-alt"></i>
+                                <i class="fas fa-phone-alt hover:text-[#007DF8]"></i>
                             </div>
                             <h3 class="font-semibold text-lg mb-1">Phone Number</h3>
                             <p class="text-gray-600">+6282 4032 567</p>
                         </div>
 
                         <!-- Email -->
-                        <div class="flex flex-col items-center py-3 md:shadow-lg">
+                        <div class="flex flex-col items-center py-3 shadow-lg w-[250px] hover:-translate-y-2 transiton-all duration-300">
                             <div class="text-3xl mb-2">
-                            <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope hover:text-[#454655]"></i>
                             </div>
                             <h3 class="font-semibold text-lg mb-1">Email Address</h3>
                             <p class="text-gray-600">Example@Email.Com</p>
                         </div>
 
                         <!-- WhatsApp -->
-                        <div class="flex flex-col items-center py-3 md:shadow-lg">
+                        <div class="flex flex-col items-center py-3 shadow-lg w-[250px] hover:-translate-y-2 transition-all duration-300 ">
                             <div class="text-3xl mb-2">
-                            <i class="fab fa-whatsapp"></i>
+                                <i class="fab fa-whatsapp hover:text-green-400"></i>
                             </div>
                             <h3 class="font-semibold text-lg mb-1">WhatsApp</h3>
                             <p class="text-gray-600">082-245-7253</p>
                         </div>
 
                         <!-- Office -->
-                        <div class="flex flex-col items-center py-3 md:shadow-lg">
+                        <div class="flex flex-col items-center py-3 shadow-lg w-[250px] hover:-translate-y-2 transition-all duration-300 ">
                             <div class="text-3xl mb-2">
-                            <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt hover:text-red-600"></i>
                             </div>
                             <h3 class="font-semibold text-lg mb-1">Our Office</h3>
                             <p class="text-gray-600">Baneshwor Kathmandu</p>
                         </div>
 
                     </div>
-            </div>
-
-                <!-- Right -->
-                <div class="heroright hidden md:flex justify-center mt-0 lg:mt-0" data-reveal data-delay="200">
-                    <img src="images/Contact Us.png" alt="Book My Test" class="w-[556px] h-[490px] object-cover">
                 </div>
             </div>
 
+            <!-- Right -->
+            <div class="heroright hidden md:flex justify-center mt-0 lg:mt-0" data-reveal data-delay="200">
+                <img src="images/Contact Us.png" alt="Book My Test" class="w-[556px] h-[490px] object-cover">
+            
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- form -->
-    <section class="pt-12  bg-gray-200">
-    <div class="grid lg:grid-cols-[40%_60%]  max-w-6xl mx-auto  gap-12  py-10">
+<!-- form -->
+    <!-- <section class="py-12">
+        <div class="grid lg:grid-cols-[40%_60%] max-w-6xl mx-auto gap-10 ">
 
-        <div class="px-0 md:px-0 ml-3">
-            <h1 class="text-4xl font-semibold text-[#0a2458] mb-4 heading">Got questions?</h1>
-            <p class="text-gray-700 font-semibold text-2xl leading-relaxed sub_heading mb-8">
-                Confused, curious, or caffeinated? Let’s talk — we’ll sort it out together!
+            <div class="px-0 md:px-0 ml-3">
+                <h1 class="text-[#0a2458] text-3xl mb-4 font-bold sub_heading">Got <span class="text-[#ff805d]">questions?</span></h1>
+                <p class="text-gray-700 normal_text">
+                    Confused, curious, or caffeinated? Let’s talk — we’ll sort it out together!
+                </p>
+    
+            </div>
+
+            <div class="rounded-xl shadow-lg w-full max-w-md mx-auto">
+                <form action="" class="flex flex-col items-center justify-center px-5 py-5 gap-2">
+                    <div class="w-full">
+                        <input type="text" placeholder="Fullname:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                    </div>
+                    <div class="w-full">
+                        <input type="text" placeholder="Phone:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                    </div>           
+                    <div class="w-full">
+                        <input type="text" placeholder="Email:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
+                    </div>
+                    <div class="w-full">
+                        <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458] text-gray-400">
+                            <option value="" class="text-gray-500">Choose a Test</option>
+                            <option value="IELTS">IELTS</option>
+                            <option value="PTE">PTE</option>
+                            <option value="TOEFL">TOEFL</option>
+                            <option value="Duolingo">Duolingo</option>
+                            <option value="GRE">GRE</option>
+                            <option value="SAT">SAT</option>
+                        </select>
+                    </div>
+                    
+                    <div class="w-full">
+                        <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458] text-gray-400">
+                            <option value="">Select a Time-Slot</option>
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon">Afternoon</option>
+                        </select>
+                    </div>  
+
+                    <div class="w-full">
+                        <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458] text-gray-400">
+                            <option value="">Select a Center</option>
+                            <option value="Kathmandu">Kathmandu</option>
+                            <option value="Pokhara">Pokhara</option>
+                            <option value="Biratnagar">Biratnagar</option>
+                            <option value="Chitwan">Chitwan</option>
+                        </select>
+                    </div>      
+                    
+                    <div class="w-full mb-2">
+                        <textarea rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]" placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <div class="w-full flex justify-center">
+                        <button type="submit"
+                            class="w-40 bg-[#0a2458] text-white py-2 rounded-full 
+                                hover:bg-[#132c6b] transition-all duration-300">
+                            Submit for Inquiry
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section> -->
+<section class=" bg-[#f9fbff] ">
+    <div class="max-w-6xl mx-auto text-center">
+        <div class="px-5 pt-5">
+            <h1 class="text-[#0a2458] font-bold text-3xl mb-2 sub_heading ">
+                Get in Touch
+            </h1>
+            <p class="text-gray-600 text-md">
+                If you have any questions, then please fill our contact form to get actual information
             </p>
         </div>
 
-        <div class="rounded-xl shadow-lg w-full max-w-md mx-auto">
-            <form action="" class="flex flex-col items-center justify-center px-5 py-5 gap-2">
-                <div class="w-full">
-                    <input type="text" placeholder="Fullname:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                </div>
-                <div class="w-full">
-                    <input type="text" placeholder="Phone:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                </div>           
-                <div class="w-full">
-                    <input type="text" placeholder="Email:" class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                </div>
-                <div class="w-full">
-                    <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                        <option value="">-- Choose a Test --</option>
-                        <option value="IELTS">IELTS</option>
-                        <option value="PTE">PTE</option>
-                        <option value="TOEFL">TOEFL</option>
-                        <option value="Duolingo">Duolingo</option>
-                        <option value="GRE">GRE</option>
-                        <option value="SAT">SAT</option>
-                    </select>
-                </div>
-                
-                <div class="w-full">
-                    <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                        <option value="">--- Select a Time-Slot ---</option>
-                        <option value="Morning">Morning</option>
-                        <option value="Afternoon">Afternoon</option>
-                    </select>
-                </div>  
+        <form action="" class="flex flex-col mx-5 md:px-48 py-5 gap-3">
+            <div class="flex flex-col md:flex-row gap-3 w-full">
+                <input type="text" placeholder="Full Name" class="w-full h-10 px-3 border-1 border-gray-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0a2458]">
+                <input type="email" placeholder="Email" class="w-full h-10 px-3 border-1 border-gray-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0a2458]">
+            </div>
 
-                <div class="w-full">
-                    <select class="w-full h-10 px-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]">
-                        <option value="">--- Select a Center ---</option>
-                        <option value="Kathmandu">Kathmandu</option>
-                        <option value="Pokhara">Pokhara</option>
-                        <option value="Biratnagar">Biratnagar</option>
-                        <option value="Chitwan">Chitwan</option>
-                    </select>
-                </div>      
-                
-                <div class="w-full">
-                    <textarea rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2458]" placeholder="Write your message here..."></textarea>
-                </div>
+            <textarea rows="4" class="w-full p-3 border-1 border-gray-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0a2458]" placeholder="Write your message here..."></textarea>
 
-                <div class="w-full flex justify-center">
-                    <button type="submit"
-                        class="w-40 bg-[#0a2458] text-white py-2 rounded-lg hover:bg-[#123172] transition duration-200">
-                        Submit for Inquiry
-                    </button>
-                </div>
-
-            </form>
-        </div>
+            <div class="flex justify-center mt-2">
+                <button type="submit" class="px-3 bg-[#0a2458] text-white py-2 rounded-lg hover:bg-[#ee7765] transition-all duration-300">
+                    Submit for Inquiry
+                </button>
+            </div>
+        </form>
     </div>
-    </section>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="bg-[#110053] text-white py-10 ">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+<!-- FOOTER -->
+<footer class="bg-[#110053] text-white py-10 ">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
-            <div class="ml-3">
-                <h1 class="text-[42px] font-semibold">BOOK your TEST</h1>
+        <div class="ml-3 md:ml-0">
+            <h1 class="heading">BOOK your TEST</h1>
 
-                <!-- IOS/ANDROID -->
-                <div class="ios-android mt-4 mb-3">
-                    <h2 class="text-[18px] mb-3">Download Our App</h2>
-                    <div class="flex gap-3">
-                        <a href="#">
-                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
-                        </a>
-                        <a href="#">
-                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
-                        </a>
-                    </div>
+            <!-- IOS/ANDROID -->
+            <div class="mt-4 mb-3">
+                <h2 class="sub_heading text-[18px] mb-3">Download Our App</h2>
+                <div class="flex gap-3">
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                    </a>
+                    <a href="#">
+                        <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                    </a>
                 </div>
             </div>
-
-            <!-- Contact -->
-            <div class="md:ml-10 ml-3">
-                <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
-                <div class="text-[14px]">
-                    <p>Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
-                    <p class="mt-2">+977-9812345678</p>
-                    <p class="mb-2">support@bookmytest.com</p>
-                    <a href="#" class="text-green-400 underline hover:text-red-600">Chat on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="md:ml-10 ml-3">
-            <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
-            <ul class="-space-y-2 text-[14px]">
-                <li><a href="/" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
-                <li><a href="/tests" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
-                <li><a href="/how-it-works" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
-                <li><a href="/download" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
-                <li><a href="/help" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
-                <li><a href="/contact" class="hover:text-orange-400"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
-            </ul>
-            </div>
-
-            <!-- Legal -->
-            <div class="ml-3">
-            <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
-            <ul class="space-y-2 text-[14px] md:ml-10">
-                <li><a href="#" class="hover:text-orange-400">Privacy Policy</a></li>
-                <li><a href="#" class="hover:text-orange-400">Terms of Service</a></li>
-                <li><a href="#" class="hover:text-orange-400">Refund & Reschedule Policy</a></li>
-            </ul>
-
-            <!-- Social -->
-            <div class="md:ml-10">
-                <h1 class="text-lg font-semibold mb-1 mt-4">Follow Us On.</h1>
-                    <div class="flex space-x-4 text-lg">
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            </div>
-
         </div>
 
-        <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
-            © 2025 Book My Test. All rights reserved. <br>
+        <!-- Contact -->
+        <div class="md:ml-10 ml-3">
+            <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
+            <div class="text-[14px]">
+                <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                <p class="mt-2">+977-9812345678</p>
+                <p class="mb-2">support@bookmytest.com</p>
+                <a href="#" class="text-green-400 underline hover:text-[#ff805d]">Chat on WhatsApp</a>
+            </div>
         </div>
-    </footer>
 
-    
+        <!-- Quick Links -->
+        <div class="md:ml-10 ml-3">
+        <h2 class="sub_heading mb-2">Quick Links</h2>
+        <ul class="-space-y-2 text-[14px]">
+            <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+            <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+            <li><a href="/how-it-works" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+            <li><a href="./download_app.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+            <li><a href="./help.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+            <li><a href="./contact" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="ml-3">
+        <h2 class="sub_heading mb-3 md:ml-10">Legal</h2>
+        <ul class="space-y-2 text-[14px] md:ml-10">
+            <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
+            <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
+            <li><a href="./refund.html" class="hover:text-orange-500">Refund & Reschedule Policy</a></li>
+        </ul>
+
+        <!-- Social -->
+        <div class="md:ml-10">
+            <h1 class="text-lg font-semibold mb-1 mt-4 sub_heading">Follow Us On.</h1>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+        © 2025 Book My Test. All rights reserved. <br>
+    </div>
+</footer>
+
 <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
 <script src="script/menu.js"></script>
 

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS - Book Your Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .card {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(7) { animation-delay: 0.7s; }
+        .card:nth-child(8) { animation-delay: 0.8s; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .icon-circle {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        
+        .floating-shape {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.3;
+            animation: float 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 min-h-screen">
+
+    <!-- Background Decorative Blobs -->
+    <div class="blob w-96 h-96 bg-purple-300 top-20 -left-48"></div>
+    <div class="blob w-96 h-96 bg-blue-300 bottom-20 -right-48" style="animation-delay: 2s;"></div>
+
+    <section class="relative py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <!-- Hero Header -->
+            <div class="text-center mb-16 relative z-10">
+                <div class="inline-block mb-4">
+                    <span class="bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 text-sm font-semibold px-6 py-2 rounded-full border border-purple-200">
+                        <i class="fas fa-globe mr-2"></i>International English Test
+                    </span>
+                </div>
+                <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
+                    <span class="gradient-text">IELTS</span>
+                </h1>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                    The International English Language Testing System (IELTS) assesses your English skills for study, work, or migration. 
+                    <span class="font-semibold text-purple-600">Join millions worldwide</span> in achieving their dreams.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="flex flex-wrap justify-center gap-8 mt-10">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600">10,000+</div>
+                        <div class="text-sm text-gray-600">Institutions</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600">140+</div>
+                        <div class="text-sm text-gray-600">Countries</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600">3M+</div>
+                        <div class="text-sm text-gray-600">Tests Annually</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                
+                <!-- What it is -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-book-open text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">What it is</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        IELTS is an international standardized test of English proficiency accepted by over 10,000 institutions worldwide.
+                    </p>
+                </div>
+
+                <!-- Test Format -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-clipboard-list text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Test Format</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Four comprehensive modules designed to test your English skills:
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-sm text-gray-700">Listening (30 min)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-sm text-gray-700">Reading (60 min)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-sm text-gray-700">Writing (60 min)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-sm text-gray-700">Speaking (11-14 min)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eligibility -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-user-check text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Eligibility</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Anyone aged <span class="font-semibold text-purple-600">16 or above</span>, regardless of background, can take the IELTS exam. No prerequisites required!
+                    </p>
+                </div>
+
+                <!-- Required Documents -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-file-alt text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Required Documents</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span class="text-gray-600">Valid passport or national ID</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span class="text-gray-600">Recent passport-sized photograph</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span class="text-gray-600">Proof of payment (if required)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Timeline -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-clock text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Result Timeline</h2>
+                    <div class="space-y-3">
+                        <div class="bg-purple-50 rounded-xl p-3 border border-purple-100">
+                            <div class="text-sm text-gray-600">Computer-based</div>
+                            <div class="text-2xl font-bold text-purple-600">3-5 days</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-3 border border-blue-100">
+                            <div class="text-sm text-gray-600">Paper-based</div>
+                            <div class="text-2xl font-bold text-blue-600">13 days</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fees -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-dollar-sign text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Test Fees</h2>
+                    <div class="mb-3">
+                        <div class="text-4xl font-extrabold gradient-text">$200 - $250</div>
+                        <p class="text-sm text-gray-500 mt-1">Varies by location and format</p>
+                    </div>
+                    <p class="text-gray-600 text-sm">
+                        Payment accepted via credit card, debit card, or online banking.
+                    </p>
+                </div>
+
+                <!-- How to Book - Full Width -->
+                <div class="card card-hover bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl p-8 shadow-2xl border border-purple-400 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-mobile-alt text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">How to Book in the App</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold mb-1">Open the App</div>
+                                    <div class="text-purple-100 text-sm">Launch "Book My Test" on your device</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold mb-1">Choose IELTS</div>
+                                    <div class="text-purple-100 text-sm">Select IELTS from available tests</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold mb-1">Select Date & Center</div>
+                                    <div class="text-purple-100 text-sm">Pick your preferred location and time</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold">4</span>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold mb-1">Complete Payment</div>
+                                    <div class="text-purple-100 text-sm">Secure checkout and confirmation</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-mobile-screen text-white text-6xl mb-4 opacity-50"></i>
+                                <p class="text-white/80 text-sm">App Booking Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini FAQ -->
+                <div class="card card-hover bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100 lg:col-span-1">
+                    <div class="icon-circle w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-question text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Quick FAQ</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="font-semibold text-gray-800 mb-2 flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-purple-500 text-xs mt-1.5"></i>
+                                <span>How many times can I take the test?</span>
+                            </div>
+                            <p class="text-gray-600 text-sm pl-5">You can take IELTS as many times as you wish, with no limits.</p>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800 mb-2 flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-purple-500 text-xs mt-1.5"></i>
+                                <span>Is it available online?</span>
+                            </div>
+                            <p class="text-gray-600 text-sm pl-5">Yes, IELTS offers both paper-based and computer-based options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="relative z-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 shadow-2xl text-center overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Book Your IELTS Test?</h3>
+                    <p class="text-purple-100 mb-8 max-w-2xl mx-auto">
+                        Take the first step towards your academic or professional goals. Book your test today!
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <button class="group bg-white text-purple-600 hover:bg-gray-50 font-bold px-10 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-3">
+                            <i class="fas fa-mobile-alt"></i>
+                            Open in App
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 flex items-center gap-3">
+                            <i class="fas fa-bell"></i>
+                            Get Reminder
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute inset-0 opacity-10">
+                    <div class="floating-shape absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
+                    <div class="floating-shape absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full" style="animation-delay: 2s;"></div>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="mt-16 text-center">
+                <p class="text-gray-500 text-sm mb-6">Trusted by leading institutions worldwide</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 opacity-50">
+                    <i class="fas fa-university text-3xl text-gray-400"></i>
+                    <i class="fas fa-graduation-cap text-3xl text-gray-400"></i>
+                    <i class="fas fa-building text-3xl text-gray-400"></i>
+                    <i class="fas fa-globe text-3xl text-gray-400"></i>
+                    <i class="fas fa-certificate text-3xl text-gray-400"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

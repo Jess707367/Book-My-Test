@@ -6,7 +6,6 @@
     <title>How it Works</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -14,17 +13,20 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <body>
-                                            <!-- NAV BAR -->
+
+<!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
         <!-- Logo -->   
         <a href="index.html" class="flex items-center ml-3">
-            <!-- <img src="images/logo.png" class="h-10 w-20 sm:h-10" alt="Book My Test Logo"> -->
-            <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
+            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
+            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
                 BOOK MY TEST    
-            </span>
+            </span> -->
         </a>
 
         <!-- Hamburger Button -->
@@ -32,15 +34,17 @@
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="hidden lg:flex gap-8 text-md text-black">
+        <ul class="hidden lg:flex gap-8 text-md">
             <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./tests.html">Tests</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact</a></li>
-            <li class="w-fit hover:text-red-500 cursor-pointer"> <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-lg text-sm font-semibold">Get the App</a></li>
+            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
+            <li class="w-fit hover:text-red-500 cursor-pointer"> 
+                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
+            </li>
 
         </ul>
         </div>
@@ -50,14 +54,10 @@
     <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
 
     <!-- Slide-In Mobile Menu -->
-    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"
-    >
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
     <!-- Header Row: Logo + Close Button -->
     <div class="flex items-center justify-between mb-6">
         <a href="index.html" class="flex items-center gap-2">
-        <span class="font-bold text-[20px] font-serif text-[#0a2458] tracking-wider">
-            BOOK MY TEST
-        </span>
         </a>
 
         <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -69,19 +69,163 @@
         <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
             <a href="./index.html" class="hover:text-red-500">Home</a>
             <a href="./about_us.html" class="hover:text-red-500">About Us</a>
-            <a href="./tests.html" class="hover:text-red-500">Tests</a>
-            <a href="./how-it_works.html" class="hover:text-red-500">How it Works</a>
+            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
+            <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
             <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
             <a href="help.html" class="hover:text-red-500">Help</a>
             <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
         </nav>
     </aside>
 
-<!--  -->
+<section class="py-16 bg-[#f9f7f6]">
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <!-- Heading -->
+        <div class="text-center pt-12 pb-20 ">
+            <h2 class="text-3xl md:text-3xl font-bold text-[#0a2458] sub_heading mb-2">Book your test in 4 simple</h2>
+            <p class="text-gray-500 normal_text"></p>
+        </div>
 
-    
+        <!-- Steps -->
+        <div class="grid md:grid-cols-4 gap-8 mb-16 text-center">
+        
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center">
+            <div class="bg-[#a76cb3] text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <i data-lucide="calendar-days" class="w-10 h-10 text-white"></i>
+            </div>
+            <div>
+                <!-- <h3 class="font-bold text-[#0a2458] mb-2 underline decoration-[#ff805d] underline-offset-4">1</h3> -->
+                <h3 class="font-semibold text-[#03003F] mb-2">Discover Dates</h3>
+                <p class="text-gray-500 text-sm">Check available dates that suit your schedule.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center">
+            <div class="bg-[#a76cb3] text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <i data-lucide="map-pin" class="w-10 h-10 text-white"></i>
+            </div>
+
+            <div>
+                <!-- <h1 class="font-bold text-[#0a2458] mb-2 underline decoration-[#ff805d] underline-offset-4">2</h1> -->
+                <h3 class="font-semibold text-[#03003F] mb-2">Choose Center</h3>
+                <p class="text-gray-500 text-sm">Pick the nearest or most convenient test center.</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center">
+            <div class="bg-[#a76cb3] text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <i data-lucide="credit-card" class="w-10 h-10 text-white"></i>
+            </div>
+        
+            <div>
+                <!-- <h1 class="font-bold text-[#0a2458] mb-2 underline decoration-[#ff805d] underline-offset-4">3</h1> -->
+                <h3 class="font-semibold text-[#03003F] mb-2">Pay</h3>
+                <p class="text-gray-500 text-sm">Securely pay for your test online.</p>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center">
+            <div class="bg-[#a76cb3] text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                <i data-lucide="bell" class="w-10 h-10 text-white"></i>
+            </div>
+                <!-- <h1 class="font-bold text-[#0a2458] mb-2 underline decoration-[#ff805d] underline-offset-4">4</h1> -->
+                <h3 class="font-semibold text-[#03003F] mb-2">Get Reminders</h3>
+                <p class="text-gray-500 text-sm">Receive notifications so you never miss your test.</p>
+            <div>
+                
+            </div>
+        
+        </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+    <footer class="bg-[#110053] text-white py-10 ">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+            <div class="ml-3 md:ml-0">
+                <h1 class="heading">BOOK your TEST</h1>
+
+                <!-- IOS/ANDROID -->
+                <div class="mt-4 mb-3">
+                    <h2 class="sub_heading text-[18px] mb-3">Download Our App</h2>
+                    <div class="flex gap-3">
+                        <a href="#">
+                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/appstore.png" class="w-30 h-10" alt="ios download">
+                        </a>
+                        <a href="#">
+                            <img src="https://educare.com.np/wp-content/themes/consultancy/images/playstore.png" class="w-30 h-10" alt="android download">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="md:ml-10 ml-3">
+                <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
+                <div class="text-[14px]">
+                    <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
+                    <p class="mt-2">+977-9812345678</p>
+                    <p class="mb-2">support@bookmytest.com</p>
+                    <a href="#" class="text-green-400 underline hover:text-[#ff805d]">Chat on WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="md:ml-10 ml-3">
+            <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
+            <ul class="-space-y-2 text-[14px]">
+                <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
+                <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
+                <li><a href="/how-it-works" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>How It Works</a></li>
+                <li><a href="./download_app.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Download App</a></li>
+                <li><a href="./help.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Help Center</a></li>
+                <li><a href="./contact" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Contact</a></li>
+            </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="ml-3">
+            <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
+            <ul class="space-y-2 text-[14px] md:ml-10">
+                <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
+                <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
+                <li><a href="./refund.html" class="hover:text-orange-500">Refund & Reschedule Policy</a></li>
+            </ul>
+
+            <!-- Social -->
+            <div class="md:ml-10">
+                <h1 class="text-lg font-semibold mb-1 mt-4 sub_heading">Follow Us On.</h1>
+                    <div class="flex space-x-4 text-lg">
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+            © 2025 Book My Test. All rights reserved. <br>
+        </div>
+    </footer>
+
+
+
 <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
 <script src="script/menu.js"></script>
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
