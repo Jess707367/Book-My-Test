@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
@@ -29,11 +28,11 @@
         </a>
 
         <!-- Hamburger Button -->
-        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl focus:outline-none">
+        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl px-3 focus:outline-none">
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="hidden lg:flex gap-8 text-md">
+        <ul class="hidden lg:flex gap-8 text-md text-black">
             <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
@@ -57,6 +56,7 @@
     <!-- Header Row: Logo + Close Button -->
     <div class="flex items-center justify-between mb-6">
         <a href="index.html" class="flex items-center gap-2">
+            <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
         </a>
 
         <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -75,55 +75,13 @@
             <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
         </nav>
     </aside>
-    
-    <!-- Hero Section -->
-    <section id="herosection" class=" md:grid lg:grid-cols-2 gap-10 items-center relative max-w-6xl mx-auto py-16">    
-    <!-- Left -->
-    <div class="space-y-8 ml-3">
-        <h1 class="text-[#0a2458] main_heading">
-        <span class="text-[#ff805d]">Book</span> English Tests in Minutes — via our App
-        </h1>
-        <p class="text-gray-600 text-lg max-w-md  sub_heading">
-        Quickly book IELTS, PTE, TOEFL, and other tests through our secure mobile app — trusted by thousands of students across Nepal.
-        </p>
-
-        <div class="flex items-center gap-3">
-            <a href="#" class="flex items-center justify-center sm:px-2 md:px-0 py-2 rounded-lg">
-                <img src="https://static.whatsapp.net/rsrc.php/y8/r/d-aqak0ELcH.svg" 
-                    alt="download Icon" 
-                    class="w-full h-12">
-            </a>
-
-            <!-- Avatars -->
-            <div class="flex -space-x-4">
-                <img src="images/profile1.jpg" class="relative z-40 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
-                <img src="images/profile2.jpg" class="relative z-30 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
-                <img src="images/profile3.jpg" class="relative z-20 w-10 h-10 rounded-full border-2 border-white object-cover" alt="">
-            </div>
-            
-            <!-- Rating -->
-            <div class="text-xs text-slate-500">
-                <div class="text-amber-400 text-base leading-none">
-                    ★★★★☆
-                    <span class="text-slate-500 text-[11px]">4.5</span>
-                </div>
-                <div>(10k+ Reviews)</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Right -->
-    <div class="heroright hidden md:flex justify-center mt-0 lg:mt-0" data-reveal data-delay="200">
-        <img src="images/main.png" alt="Book My Test" class="w-full h-full max-w-xl mx-auto object-cover">
-    </div>
-    </section>
 
 
-    <section class="bg-gray-50 py-12">
+    <section class="bg-gray-50 py-16">
         <div class="max-w-6xl mx-auto px-6 lg:px-10">
             <!-- Header -->
             <div class="text-center">
-            <h1 class="heading text-[#0a2458] mb-4">Insights & Updates</h1>
+            <h1 class="text-4xl mb-4 text-[#0a2458] main_heading">Insights & Articles</h1>
             <p class="text-gray-600">
                 Stay informed with the latest updates, exam tips, and study resources from <span class="text-[#f59e0b] font-medium">Book My Test</span>.
             </p>
@@ -140,76 +98,121 @@
         </div>
     </section>
 
-<section class="py-12 bg-white shadow-xl">
+<section class="py-12 bg-white">
     <div class="max-w-6xl mx-auto">
+
         <!-- Featured Post -->
-        <div class="grid md:grid-cols-[40%_60%] gap-10 items-center">
-            <img src="images/blog-feature.jpg" alt="Featured Blog" class="rounded-2xl h-full object-cover">
-            <div class="mx-5">
+        <div class=" grid md:grid-cols-[40%_60%] gap-10 items-center px-3">
+            <img src="images/blog-main.jpg" alt="Featured Blog" class="rounded-2xl h-full object-cover">
+            
+            <div class="hidden md:flex px-5 flex-col">
+                <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 w-20 py-1 rounded-full text-sm font-medium">Featured</span>
+                
+                <h2 class="sub_heading text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h2>
+                
+                <p class="text-gray-600 mb-6">Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.</p>
+                
+                <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">
+                    Read More →
+                </a>
+            </div>
+
+            <div class="md:hidden">
                 <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 py-1 rounded-full text-sm font-medium">Featured</span>
-                <h2 class="heading text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h2>
+                <h2 class="sub_heading text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h2>
                 <p class="text-gray-600 mb-6">
                 Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.
                 </p>
-                <a href="#" class="font-['Nunito'] text-[#0a2458] font-semibold hover:text-[#f59e0b] transition">Read More →</a>
+                <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
             </div>
+
+
+
         </div>
     </div>
 </section>
 
-<section class="py-12">
+<section class="md:py-24">
     <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl mb-4 text-[#0a2458] main_heading px-3">Latest Stories</h1>
+
         <!-- Blog Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
-        
-        <!-- Blog Card -->
-        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 overflow-hidden">
-            <img src="images/blog1.jpg" alt="Blog 1" class="w-full h-56 object-cover">
-            <div class="p-6">
-            <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">IELTS</span>
-            <h3 class="text-xl font-semibold text-[#0a2458] mt-3 mb-2 hover:text-[#f59e0b] transition">How to Improve Your IELTS Speaking Score</h3>
-            <p class="text-gray-600 mb-4">Simple and effective techniques to boost your confidence and fluency during IELTS speaking tests.</p>
-            <a href="#" class="font-['Nunito'] text-[#0a2458] font-semibold hover:text-[#f59e0b] transition">Read More →</a>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-3">
+
+            <!-- blog1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="images/blog4.jpg" alt="Blog SAT" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">SAT</span>
+                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Conquered SAT</h3>
+                    <p class="text-gray-600 text-sm mb-4">From panic to laughs: my quirky journey of mastering SAT math questions creatively.</p>
+                    <a href="./blog1.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
             </div>
+
+            <!-- blog2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="images/blog5.jpg" alt="Blog Language Cert" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Language Cert</span>
+                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">My Funny Fails Before Acing LanguageCert Listening</h3>
+                    <p class="text-gray-600 text-sm mb-4">Mistakes, surprises, and small hacks I discovered while preparing for LanguageCert.</p>
+                    <a href="./blog2.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+            </div>
+
+            <!-- TOEFL -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="images/blog6.jpg" alt="Blog TOEFL" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">TOEFL</span>
+                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Stopped Freezing and Started Chatting</h3>
+                    <p class="text-gray-600 text-sm mb-4">Tips, tricks, and personal anecdotes that helped me finally speak confidently on TOEFL.</p>
+                    <a href="./blog3.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+            </div>
+            <!-- Blog Card -->
+            <div class="bg-white shadow-md">
+                <img src="images/blog1.jpg" alt="Blog 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">IELTS</span>
+                <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How to Improve Your IELTS Speaking Score</h3>
+                <p class="text-gray-600 text-sm mb-4">Simple and effective techniques to boost your confidence and fluency during IELTS speaking tests.</p>
+                <a href="./blog4.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+            </div>
+            
+            <!-- PTE -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="images/blog2.jpg" alt="Blog PTE" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">PTE</span>
+                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Outsmarted PTE Reading Without Pulling My Hair</h3>
+                    <p class="text-gray-600 text-sm mb-4">Fun tricks and sneaky shortcuts I used to tackle PTE reading questions like a pro.</p>
+                    <a href="./blog5.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Duolingo -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="images/blog3.jpg" alt="Blog Duolingo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Duolingo</span>
+                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Nailed the Duolingo Test While Binge-Watching Netflix</h3>
+                    <p class="text-gray-600 text-sm mb-4">Yes, really! Tips for boosting your score without sacrificing all your free time.</p>
+                    <a href="./blog6.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Blog Card -->
-        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 overflow-hidden">
-            <img src="images/blog2.jpg" alt="Blog 2" class="w-full h-56 object-cover">
-            <div class="p-6">
-            <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">GRE</span>
-            <h3 class="text-xl font-semibold text-[#0a2458] mt-3 mb-2 hover:text-[#f59e0b] transition">Mastering the GRE Verbal Section</h3>
-            <p class="text-gray-600 mb-4">Step-by-step guide to tackle reading comprehension and vocabulary questions effectively.</p>
-            <a href="#" class="font-['Nunito'] text-[#0a2458] font-semibold hover:text-[#f59e0b] transition">Read More →</a>
-            </div>
-        </div>
-
-        <!-- Blog Card -->
-        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 overflow-hidden">
-            <img src="images/blog3.jpg" alt="Blog 3" class="w-full h-56 object-cover">
-            <div class="p-6">
-            <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Language Tips</span>
-            <h3 class="text-xl font-semibold text-[#0a2458] mt-3 mb-2 hover:text-[#f59e0b] transition">Boost Vocabulary the Smart Way</h3>
-            <p class="text-gray-600 mb-4">Learn how to memorize and retain new words effectively using practical strategies and apps.</p>
-            <a href="#" class="text-[#0a2458] font-semibold hover:text-[#f59e0b] transition">Read More →</a>
-            </div>
-        </div>
-        </div>
-
-        <!-- Newsletter Section -->
-        <div class="mt-12 bg-[#0a2458] text-white py-12 px-8 rounded-3xl text-center shadow-lg">
-        <h2 class="text-3xl font-semibold mb-3">Subscribe for the Latest Test Tips & Updates</h2>
-        <p class="text-gray-200 mb-6">Join thousands of students who get our monthly insights and free prep guides.</p>
-        <form class="flex flex-col sm:flex-row justify-center gap-3 max-w-xl mx-auto">
-            <input type="email" placeholder="Enter your email" class="px-16 rounded-full focus:outline-none text-gray-800">
-            <button type="submit" class="bg-[#f59e0b] px-12 py-3 rounded-full font-semibold hover:bg-[#d48806] transition">Subscribe</button>
-        </form>
-        </div>
 
     </div>
 </section>
 
 
+
+    <!-- FOOTER -->
     <footer class="bg-[#110053] text-white py-10 ">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
@@ -243,7 +246,7 @@
 
             <!-- Quick Links -->
             <div class="md:ml-10 ml-3">
-            <h2 class="sub_heading mb-2">Quick Links</h2>
+            <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
             <ul class="-space-y-2 text-[14px]">
                 <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
                 <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
@@ -256,7 +259,7 @@
 
             <!-- Legal -->
             <div class="ml-3">
-            <h2 class="sub_heading mb-3 md:ml-10">Legal</h2>
+            <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
             <ul class="space-y-2 text-[14px] md:ml-10">
                 <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
                 <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
@@ -281,5 +284,12 @@
             © 2025 Book My Test. All rights reserved. <br>
         </div>
     </footer>
+
+
+<script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
+<script src="script/menu.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
 </body>
 </html>
