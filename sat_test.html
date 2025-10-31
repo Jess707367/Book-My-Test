@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script> 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,7 +18,6 @@
 
 </head>
 <body>
-
 <!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
@@ -31,11 +30,11 @@
         </a>
 
         <!-- Hamburger Button -->
-        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl px-3 focus:outline-none">
+        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] px-3 text-2xl focus:outline-none">
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <ul class="hidden lg:flex gap-8 text-md">
+        <ul class="hidden lg:flex gap-8 text-md text-black">
             <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
             <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
@@ -59,6 +58,7 @@
     <!-- Header Row: Logo + Close Button -->
     <div class="flex items-center justify-between mb-6">
         <a href="index.html" class="flex items-center gap-2">
+            <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
         </a>
 
         <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -71,101 +71,130 @@
             <a href="./index.html" class="hover:text-red-500">Home</a>
             <a href="./about_us.html" class="hover:text-red-500">About Us</a>
             <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
-            <a href="./how_it_works.html" class="hover:text-red-500">How it Works</a>
+            <a href="./how-it_works.html" class="hover:text-red-500">How it Works</a>
             <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
             <a href="help.html" class="hover:text-red-500">Help</a>
             <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
         </nav>
     </aside>
 
-    <section class="">
-    <div class="max-w-6xl mx-auto">
-        <div class="sm:px-2 md:px-32 py-16">
-            <div class="pb-12">
-                <h2 class="text-3xl font-bold text-[#0a2458] sub_heading text-center pb-1">
-                    <span class="text-[#ff805d]">BOOK</span> Your Test
-                </h2>
-                <p class="text-gray-500 text-center">
-                    Reserve your slot quickly and get ready for success
+<section class="bg-[#f8fafc] py-16">
+    <div class="max-w-6xl mx-auto px-6 md:px-12">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h1 class="font-bold sub_heading text-4xl text-[#0a2458] tracking-wider mb-3">SAT</h1>
+            <p class="text-gray-600 text-md max-w-3xl mx-auto leading-relaxed">
+                The <span class="font-semibold text-purple-600">Scholastic Assessment Test (SAT)</span> is a computer-based English proficiency test designed for study, work, and migration abroad.
+                Trusted by thousands of institutions and governments worldwide for its fast and fair assessment.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="flex flex-wrap justify-center gap-8 mt-10">
+                <div class="text-center">
+                <div class="text-2xl font-bold text-purple-600">3,000+</div>
+                <div class="text-sm text-gray-600">Universities & Colleges</div>
+                </div>
+                <div class="text-center">
+                <div class="text-2xl font-bold text-purple-600">120+</div>
+                <div class="text-sm text-gray-600">Countries</div>
+                </div>
+                <div class="text-center">
+                <div class="text-2xl font-bold text-purple-600">365 Days</div>
+                <div class="text-sm text-gray-600">Available Year-Round</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- What it is -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">What it is</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                SAT is an AI-powered English language test that measures your listening, reading, speaking, and writing skills accurately and securely.
                 </p>
             </div>
-            
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 border-1 shadow-lg px-12 py-12 mx-3">
-                <!-- Name -->
-                <div class="flex flex-col">
-                    <label for="name" class="text-gray-700 font-medium mb-2">Full Name</label>
-                    <input type="text" id="name" placeholder="John Doe"
-                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500"/>
-                </div>
-                
-                <!-- Email -->
-                <div class="flex flex-col">
-                    <label for="email" class="text-gray-700 font-medium mb-2">Email</label>
-                    <input type="email" id="email" placeholder="john@example.com"
-                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500" />
-                </div>
-                
-                <!-- Phone -->
-                <div class="flex flex-col">
-                    <label for="phone" class="text-gray-700 font-medium mb-2">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="+977 234 567 8901"
-                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500" />
-                </div>
-                
-                <!-- Select Test -->
-                    <div class="flex flex-col">
-                        <label for="test" class="text-gray-700 font-medium mb-2">Select Test</label>
-                        <select class="py-2 px-4 border-1 border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400">
-                            <option disabled selected class="text-gray-500">Choose a Test</option>
-                            <option value="IELTS">IELTS</option>
-                            <option value="PTE">PTE</option>
-                            <option value="TOEFL">TOEFL</option>
-                            <option value="Duolingo">Duolingo</option>
-                            <option value="GRE">GRE</option>
-                            <option value="SAT">SAT</option>
-                        </select>
-                    </div>
-                
-                <!-- Date -->
-                <div class="flex flex-col">
-                    <label for="date" class="text-gray-700 font-medium mb-2">Preferred Date</label>
-                    <input type="date" id="date"
-                        class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400" />
-                </div>
-                
-                <!-- Time Slot -->
-                <div class="flex flex-col">
-                    <label for="time" class="text-gray-700 font-medium mb-2">Time Slot</label>
-                    <select id="time"
-                            class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500 text-gray-400">
-                    <option disabled selected>Choose a time slot</option>
-                    <option>10:00 AM - 12:00 PM</option>
-                    <option>1:00 PM - 3:00 PM</option>
-                    <option>4:00 PM - 6:00 PM</option>
-                    </select>
-                </div>
-                
-                <!-- Notes -->
-                <div class="flex flex-col md:col-span-2">
-                    <label for="notes" class="text-gray-700 font-medium mb-2">Additional Notes</label>
-                    <textarea id="notes" rows="4" placeholder="Any specific requests..."
-                            class="border-1 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-500"></textarea>
-                </div>
-                
-                <!-- Submit Button -->
-                <div class="md:col-span-2 text-center ">
-                    <a type="submit" href="./book.html" class="bg-[#ff805d] hover:bg-[#ff6a40] text-white font-semibold px-12 py-2 rounded-lg transition">
-                        Book Now
-                    </a>
-                    <!-- Message -->
-                    <p id="bookMsg" class="text-green-600 font-semibold mt-4 hidden">
-                        ✅ Your test has been booked!
-                    </p>
-                </div>
-            </form>
+
+            <!-- Test Format -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Test Format</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                The test is divided into three parts — Speaking & Writing, Reading, and Listening — and takes around 2 hours to complete on a computer.
+                </p>
+            </div>
+
+            <!-- Eligibility -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Eligibility</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                Anyone aged 16 or above can take the SAT Academic. Candidates under 18 require parental consent.
+                </p>
+            </div>
+
+            <!-- Required Documents -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Required Documents</h2>
+                <ul class="text-gray-600 text-sm list-disc ml-6 space-y-1">
+                <li>Valid passport (mandatory)</li>
+                <li>Proof of payment (if applicable)</li>
+                <li>Booking confirmation email</li>
+                </ul>
+            </div>
+
+            <!-- Result Timeline -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Result Timeline</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                Results are typically available within <span class="font-semibold">24–48 hours</span> after taking the test.
+                </p>
+            </div>
+
+            <!-- Fees -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Fees (Range)</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                The SAT Academic fee ranges from <span class="font-semibold text-[#0a2458]">$185 – $250</span>, depending on your country and test center.
+                </p>
+            </div>
+
+            <!-- How to Book -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">How to Book in the App</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Open the “Book My Test” app → Choose SAT → Select your test center and date → Upload your ID → Complete payment.
+                </p>
+            </div>
+
+            <!-- Mini FAQ -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border-1">
+                <h2 class="text-xl font-semibold text-[#0a2458] mb-3 border-l-4 border-[#ff805d] pl-3">Mini FAQ</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                <span class="font-semibold text-[#0a2458]">Q:</span> How long are SAT scores valid?
+                </p>
+                <p class="text-gray-600 text-sm mb-3">
+                <span class="font-semibold text-[#0a2458]">A:</span> SAT scores are valid for 2 years from the test date.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                <span class="font-semibold text-[#0a2458]">Q:</span> Can I reschedule or cancel my test?
+                </p>
+                <p class="text-gray-600 text-sm">
+                <span class="font-semibold text-[#0a2458]">A:</span> Yes, you can reschedule or cancel up to 14 days before your test date.
+                </p>
+            </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
+        <a href="./booking_form.html" class="bg-[#0a2458] hover:bg-[#142e70] text-center text-sm text-white font-semibold w-32 py-2 rounded-full shadow-md transition">
+            Book Now
+        </a>
+        <a class="border bg-[#0a2458] text-center text-sm text-white hover:bg-[#142e70] hover:text-white font-semibold w-32 py-2 rounded-full transition">
+            Open in App
+        </a>
         </div>
     </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer class="bg-[#110053] text-white py-10 ">
@@ -190,7 +219,7 @@
 
         <!-- Contact -->
         <div class="md:ml-10 ml-3">
-            <h2 class="text-[24px] mb-3">Contact Us</h2>
+            <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
             <div class="text-[14px]">
                 <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
                 <p class="mt-2">+977-9812345678</p>
@@ -201,7 +230,7 @@
 
         <!-- Quick Links -->
         <div class="md:ml-10 ml-3">
-        <h2 class="text-[24px] mb-3">Quick Links</h2>
+        <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
         <ul class="-space-y-2 text-[14px]">
             <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
             <li><a href="./test_we_support.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Tests We Support</a></li>
@@ -214,7 +243,7 @@
 
         <!-- Legal -->
         <div class="ml-3">
-        <h2 class="sub_heading mb-3 md:ml-10">Legal</h2>
+        <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
         <ul class="space-y-2 text-[14px] md:ml-10">
             <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
             <li><a href="./terms_of_service.html" class="hover:text-orange-500">Terms of Service</a></li>
@@ -239,7 +268,6 @@
         © 2025 Book My Test. All rights reserved. <br>
     </div>
 </footer>
-
 
 <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
 <script src="script/menu.js"></script>
