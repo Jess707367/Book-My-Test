@@ -51,3 +51,11 @@
 } else {
   navbar.classList.remove("bg-white", "shadow-md", "scrolled");
 }
+
+
+
+
+
+
+
+//big menu 

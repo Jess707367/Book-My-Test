@@ -4,68 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How I Conquered SAT | Book My Test Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <!-- NAV BAR -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md py-3">
+<!-- NAV BAR -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md px-6 md:px-4 py-4 md:py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
-        <!-- Logo -->   
-        <a href="index.html" class="flex items-center ml-3">
-            <img src="images/logo.png" class="h-10 w-full sm:h-10" alt="Book My Test Logo">
-            <!-- <span class="font-bold text-[18px] md:text-[22px] text-[#0a2458] tracking-wider heading">
-                BOOK MY TEST    
-            </span> -->
-        </a>
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="images/logo.png" class="h-8 md:h-10 w-auto" alt="Book My Test Logo">
+            </a>
 
-        <!-- Hamburger Button -->
-        <button  title="button" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl px-3 focus:outline-none">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <!-- Hamburger Button (this id is used by the script) -->
+            <button title="Open menu" id="openMenu" class="lg:hidden text-[#0a2458] text-2xl focus:outline-none" type="button">
+                <span class="line block w-6 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+                <span class="line block w-4 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+                <span class="line block w-6 h-[1.75px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+            </button>
 
-        <ul class="hidden lg:flex gap-8 text-md text-black">
-            <li class="hover:text-red-500 mt-2"><a href="./index.html">Home</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./how_it_works.html">How it Works</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Downloads</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./help.html">Help</a></li>
-            <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li>
-            <li class="w-fit hover:text-red-500 cursor-pointer"> 
-                <a href="#" class="hidden sm:inline-block bg-[#0a2458] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#132c6b] transition-all duration-300">Get the App</a>
-            </li>
+            <!-- Desktop Links -->
+            <ul class="hidden md:flex gap-8 text-gray-700">
+                <li class="hover:text-red-500 mt-2"><a href="./index.html"> Home</a></li>
+                <li class="hover:text-red-500 mt-2"><a href="./about_us.html">About Us</a></li>
+                <li class="hover:text-red-500 mt-2"><a href="./test_we_support.html">Tests</a></li>
+                <!-- <li class="hover:text-red-500 mt-2"><a href="./contact_us.html">Contact Us</a></li> -->
+                <!-- <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Help</a></li> -->
+                <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Download</a></li>
 
-        </ul>
+                <li id="openMenuMobile" class="flex nav items-center hover:text-red-700">
+                <p class="text-[15px] text-gray-700 cursor-pointer hidden sm:block">MENU</p>
+                <button id="openMenuMobileBtn" type="button" class="text-[12px] ml-1 cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+                    <span class="line block w-6 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+                    <span class="line block w-4 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+                    <span class="line block w-6 h-[1.75px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+                </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="menuOverlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
-
+    <!-- SINGLE Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
     <!-- Slide-In Mobile Menu -->
-    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 p-6 flex flex-col gap-0 shadow-lg"    >
-    <!-- Header Row: Logo + Close Button -->
-    <div class="flex items-center justify-between mb-6">
-        <a href="index.html" class="flex items-center gap-2">
-            <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
-        </a>
+    <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-full bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 px-6 py-4 flex flex-col gap-0 shadow-lg"    >
+        <div class="flex items-center justify-between mb-6">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
+            </a>
 
-        <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
+            <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
 
         <!-- Links -->
-        <nav class="flex flex-col gap-6 text-[15px] font-medium text-black">
-            <a href="./index.html" class="hover:text-red-500">Home</a>
-            <a href="./about_us.html" class="hover:text-red-500">About Us</a>
-            <a href="./test_we_support.html" class="hover:text-red-500">Tests</a>
-            <a href="./how-it_works.html" class="hover:text-red-500">How it Works</a>
-            <a href="./download_app.html" class="hover:text-red-500">Downloads</a>
-            <a href="help.html" class="hover:text-red-500">Help</a>
-            <a href="./contact_us.html" class="hover:text-red-500">Contact</a>
+        <nav class="flex flex-col gap-4 text-sm text-gray-700">
+            <a href="./index.html" class="hover:text-[#007DF8]">Home</a>
+            <a href="./about_us.html" class="hover:text-[#007DF8]">About Us</a>
+            <a href="./test_we_support.html" class="hover:text-[#007DF8]">Tests</a>
+            <a href="./blog.html" class="hover:text-[#007DF8]">Blog</a>
+            <a href="./how-it_works.html" class="hover:text-[#007DF8]">How it Works</a>
+            <a href="./download_app.html" class="hover:text-[#007DF8]">Downloads</a>
+            <a href="help.html" class="hover:text-[#007DF8]">Help</a>
+            <a href="./contact_us.html" class="hover:text-[#007DF8]">Contact</a>
         </nav>
     </aside>
+
+    <!-- RIGHT-SIDE Slide-in Menu Panel -->
+    <aside id="menuPanel" class="hidden md:block fixed top-0 right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <img src="images/logo.png" alt="Logo" class="h-10 w-auto object-contain">
+                </div>
+                <div>
+                    <button id="closeMenuBtn" type="button" aria-label="Close menu" class="text-gray-600 hover:text-red-600">
+                        <span class="text-4xl text-red-700 transition-transform duration-200 transform hover:scale-110">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-[80%,20%]">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full px-4">
+                    <div class="mt-32">
+                        <ul class="normal_text text-[#1a2a4a] text-[1.5rem] space-y-12 tracking-wide">
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./test_we_support.html">Tests We Support</a>
+                            </li>
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./contact_us.html">Contact Us</a>
+                            </li>
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./about_us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-32">
+                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./blog.html">Blog</a>
+                            </li>
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./help.html">Help & FAQ</a>
+                            </li>
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./testomonial_success_stories.html">Success Stories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-32">
+                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./how_it_works.html">How It Works</a>
+                            </li>
+                            <!-- <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./how_it_works.html">How It Works</a>
+                            </li> -->
+                            <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                                <a href="./download_app.html">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 py-24 pb-10 relative min-w-[260px] max-w-[100vw]">
+                    <div class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex">
+                        <div class="space-y-2 text-center">
+                            <a href="./contact_us.html" class="hover:text-red-700 text-[#1a2a4a] text-base text-sm tracking-wide cursor-pointer hover:underline">Contact Us</a>
+                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Privacy Policy</p>
+                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Refund & Reschedule Policy</p>
+                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Copyright Policy</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2">
+                            <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
+                            <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
+                            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+                        </div>
+                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
+                            <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
+                            <i class="fa-brands fa-threads cursor-pointer"></i>
+                            <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h4 class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1">Book Test</h4>
+                            <p class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug">
+                                98000 Kathmandu,<br>
+                                Nepal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
 
 
     <!-- Header Image -->
@@ -73,9 +177,9 @@
         <img src="images/blog5.jpg" alt="How I Conquered SAT" class="px-3 w-full h-[480px] object-cover">
     </div>
 
-<section class="pb-12">
+<section class="pb-12 py-16 md:py-0">
     <!-- Article Container -->
-    <div class="max-w-4xl mx-auto bg-white p-10 -mt-16 relative z-10 shadow-md">
+    <div class="max-w-4xl mx-auto bg-white p-8 md:p-10 -mt-16 relative z-10 shadow-md">
         <!-- Meta -->
         <div class="text-sm text-gray-500 mb-3">
             <span>JANUARY 12 2025</span> &nbsp; • &nbsp;
@@ -84,7 +188,7 @@
         </div>
 
         <!-- Title -->
-        <h1 class="text-3xl font-bold text-[#0a2458] mb-6 leading-tight">My Funny Fails Before Acing LanguageCert Listening        </h1>
+        <h1 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-6 leading-tight">My Funny Fails Before Acing LanguageCert Listening        </h1>
 
         <!-- Article -->
         <div class="text-gray-700">
@@ -110,12 +214,11 @@
     </div>
 </section>
 
-
-    <!-- FOOTER -->
+ <!-- FOOTER -->
     <footer class="bg-[#110053] text-white py-10 ">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
-            <div class="ml-3 md:ml-0">
+            <div class="ml-6 md:ml-0">
                 <h1 class="heading">BOOK your TEST</h1>
 
                 <!-- IOS/ANDROID -->
@@ -133,7 +236,7 @@
             </div>
 
             <!-- Contact -->
-            <div class="md:ml-10 ml-3">
+            <div class="ml-6 md:ml-10 ">
                 <h2 class="text-[24px] font-semibold mb-3">Contact Us</h2>
                 <div class="text-[14px]">
                     <p class="text-white">Book My Test Pvt. Ltd.<br>Kathmandu, Nepal</p>
@@ -144,7 +247,7 @@
             </div>
 
             <!-- Quick Links -->
-            <div class="md:ml-10 ml-3">
+            <div class="md:ml-10 ml-6">
             <h2 class="text-[24px] font-semibold mb-2">Quick Links</h2>
             <ul class="-space-y-2 text-[14px]">
                 <li><a href="./index.html" class="hover:text-orange-500"><span class="text-[24px] mr-1">&rsaquo;</span>Home</a></li>
@@ -157,7 +260,7 @@
             </div>
 
             <!-- Legal -->
-            <div class="ml-3">
+            <div class="ml-6 md:ml-3">
             <h2 class="text-[24px] font-semibold mb-3 md:ml-10">Legal</h2>
             <ul class="space-y-2 text-[14px] md:ml-10">
                 <li><a href="./privacy_policy.html" class="hover:text-orange-500">Privacy Policy</a></li>
@@ -183,13 +286,12 @@
             © 2025 Book My Test. All rights reserved. <br>
         </div>
     </footer>
-
     
 <script src="https://kit.fontawesome.com/a2e0e9a66b.js" crossorigin="anonymous"></script>
 <script src="script/menu.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>lucide.createIcons();</script>
-
+<script src="script/big_menu.js"></script>
 
 </body>
 </html>
