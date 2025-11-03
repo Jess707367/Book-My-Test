@@ -19,12 +19,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<!-- NAV BAR -->
+
+    <!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md px-6 md:px-4 py-4 md:py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" class="h-8 md:h-10 w-auto" alt="Book My Test Logo">
+                <img src="images/logo.png" class="h-6 md:h-10 w-auto" alt="Book My Test Logo">
             </a>
 
             <!-- Hamburger Button (this id is used by the script) -->
@@ -44,7 +45,7 @@
                 <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Download</a></li>
 
                 <li id="openMenuMobile" class="flex nav items-center hover:text-red-700">
-                <p class="text-[15px] text-gray-700 cursor-pointer hidden sm:block">MENU</p>
+                <!-- <p class="text-[15px] text-gray-700 cursor-pointer hidden sm:block">MENU</p> -->
                 <button id="openMenuMobileBtn" type="button" class="text-[12px] ml-1 cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
                     <span class="line block w-6 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
                     <span class="line block w-4 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
@@ -61,7 +62,7 @@
     <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-full bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 px-6 py-4 flex flex-col gap-0 shadow-lg"    >
         <div class="flex items-center justify-between mb-6">
             <a href="index.html" class="flex items-center gap-2">
-                <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
+                <img src="images/logo.png" class="h-6 w-full" alt="Book My Test Logo">
             </a>
 
             <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -75,7 +76,7 @@
             <a href="./about_us.html" class="hover:text-[#007DF8]">About Us</a>
             <a href="./test_we_support.html" class="hover:text-[#007DF8]">Tests</a>
             <a href="./blog.html" class="hover:text-[#007DF8]">Blog</a>
-            <a href="./how_it_works.html" class="hover:text-[#007DF8]">How it Works</a>
+            <!-- <a href="./how_it_works.html" class="hover:text-[#007DF8]">How it Works</a> -->
             <a href="./download_app.html" class="hover:text-[#007DF8]">Downloads</a>
             <a href="help.html" class="hover:text-[#007DF8]">Help</a>
             <a href="./contact_us.html" class="hover:text-[#007DF8]">Contact</a>
@@ -96,10 +97,10 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-[80%,20%]">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full px-4">
+            <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 w-full ">
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./test_we_support.html">Tests We Support</a>
                             </li>
@@ -112,7 +113,7 @@
                         </ul>
                     </div>
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./blog.html">Blog</a>
                             </li>
@@ -125,7 +126,7 @@
                         </ul>
                     </div>
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./how_it_works.html">How It Works</a>
                             </li>
@@ -137,38 +138,39 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 py-24 pb-10 relative min-w-[260px] max-w-[100vw]">
-                    <div class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex">
-                        <div class="space-y-2 text-center">
-                            <a href="./contact_us.html" class="hover:text-red-700 text-[#1a2a4a] text-base text-sm tracking-wide cursor-pointer hover:underline">Contact Us</a>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Privacy Policy</p>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Refund & Reschedule Policy</p>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Copyright Policy</p>
-                        </div>
-                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2">
-                            <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
-                            <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
-                            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
-                        </div>
-                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
-                            <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
-                            <i class="fa-brands fa-threads cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
-                        </div>
-                        <div class="mt-8 text-center">
-                            <h4 class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1">Book Test</h4>
-                            <p class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug">
-                                98000 Kathmandu,<br>
-                                Nepal
-                            </p>
+                    <div class="w-full bg-white flex flex-col items-start justify-start pt-32 pb-10">
+                        <div class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex">
+                            <div class="space-y-2 text-center">
+                                <a href="./contact_us.html" class="hover:text-red-700 text-[#1a2a4a] text-base text-sm tracking-wide cursor-pointer hover:underline">Contact Us</a>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Privacy Policy</p>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Refund & Reschedule Policy</p>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Copyright Policy</p>
+                            </div>
+                            <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center my-4">
+                                <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
+                                <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
+                                <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+                            </div>
+                            <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
+                                <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
+                                <i class="fa-brands fa-threads cursor-pointer"></i>
+                                <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <h4 class="text-[#1a2a4a] sub_heading text-base text-sm font-semibold mb-1 cursor-pointer">Book My Test</h4>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-xs cursor-pointer">
+                                    98000 Kathmandu,<br>
+                                    Nepal
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </aside>
-
 
 
     <!-- Header Image -->
@@ -176,42 +178,42 @@
         <img src="images/blog6.jpg" alt="How I Conquered SAT" class="px-3 w-full h-[480px] object-cover">
     </div>
 
-<section class="pb-12 py-16 md:py-0">
-    <!-- Article Container -->
-    <div class="max-w-4xl mx-auto bg-white p-8 md:p-10 -mt-16 relative z-10 shadow-md">
-        <!-- Meta -->
-        <div class="text-sm text-gray-500 mb-3">
-            <span>OCTOBER 30, 2025</span> &nbsp; • &nbsp;
-            <span>BY JESS</span> &nbsp; • &nbsp;
-            <span>6 MIN READ</span>
+    <section class="pb-12 py-16 md:py-0">
+        <!-- Article Container -->
+        <div class="max-w-4xl mx-auto bg-white p-8 md:p-10 -mt-16 relative z-10 shadow-md">
+            <!-- Meta -->
+            <div class="text-sm text-gray-500 mb-3">
+                <span>OCTOBER 30, 2025</span> &nbsp; • &nbsp;
+                <span>BY JESS</span> &nbsp; • &nbsp;
+                <span>6 MIN READ</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-6 leading-tight">How I Stopped Freezing and Started Chatting</h1>
+
+            <!-- Article -->
+            <div class="text-gray-700">
+                <p class="text-sm font-['Nunito']">
+                    During speaking practice, my brain turned into a blank whiteboard. I’d start a sentence, panic halfway, and end with awkward laughter. Every. Single. Time.
+                    Then I tried something silly — talking to myself. About breakfast, my socks, random thoughts. I recorded it all. Slowly, I stopped caring how I sounded and started focusing on getting my message across.
+                    By test day, I was chatting like I was telling a story to a friend — mistakes and all. Turns out, fluency grows the moment fear shuts up.ted effort, not fear.
+                </p>
+
+                <blockquote class="border-l-4 border-[#f59e0b] pl-4 italic text-gray-600 my-6 font-['Nunito']">
+                    “Confidence isn’t knowing all the words — it’s saying the ones you do with heart.”            
+                </blockquote>
+
+            </div>
+
+            <!-- Back Button -->
+            <div class="mt-10">
+                <a href="blog.html" class="inline-flex items-center gap-2 font-semibold text-[#0a2458] hover:text-[#f59e0b] transition">
+                    <span class="text-2xl">&#8592;</span>
+                    Back
+                </a>
+            </div>
         </div>
-
-        <!-- Title -->
-        <h1 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-6 leading-tight">How I Stopped Freezing and Started Chatting</h1>
-
-        <!-- Article -->
-        <div class="text-gray-700">
-            <p class="text-sm font-['Nunito']">
-                During speaking practice, my brain turned into a blank whiteboard. I’d start a sentence, panic halfway, and end with awkward laughter. Every. Single. Time.
-                Then I tried something silly — talking to myself. About breakfast, my socks, random thoughts. I recorded it all. Slowly, I stopped caring how I sounded and started focusing on getting my message across.
-                By test day, I was chatting like I was telling a story to a friend — mistakes and all. Turns out, fluency grows the moment fear shuts up.ted effort, not fear.
-            </p>
-
-            <blockquote class="border-l-4 border-[#f59e0b] pl-4 italic text-gray-600 my-6 font-['Nunito']">
-                “Confidence isn’t knowing all the words — it’s saying the ones you do with heart.”            
-            </blockquote>
-
-        </div>
-
-        <!-- Back Button -->
-        <div class="mt-10">
-            <a href="blog.html" class="inline-flex items-center gap-2 font-semibold text-[#0a2458] hover:text-[#f59e0b] transition">
-                <span class="text-2xl">&#8592;</span>
-                Back
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
 
  <!-- FOOTER -->

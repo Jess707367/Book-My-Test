@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Homepage</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+
+    <style>
+        .main_heading {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #0a2458;
+        }
+        .sub_heading {
+            font-size: 1.75rem;
+            font-weight: 500;
+        }
+        .normal_text {
+            font-size: 1rem;
+        }
+        .nav_text {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
-
-<!-- NAV BAR -->
+    <!-- NAV BAR -->
     <nav class="sticky top-0 z-50 bg-white shadow-md px-6 md:px-4 py-4 md:py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" class="h-8 md:h-10 w-auto" alt="Book My Test Logo">
+                <img src="images/logo.png" class="h-6 md:h-10 w-auto" alt="Book My Test Logo">
             </a>
 
             <!-- Hamburger Button (this id is used by the script) -->
@@ -43,7 +62,7 @@
                 <li class="hover:text-red-500 mt-2"><a href="./download_app.html">Download</a></li>
 
                 <li id="openMenuMobile" class="flex nav items-center hover:text-red-700">
-                <p class="text-[15px] text-gray-700 cursor-pointer hidden sm:block">MENU</p>
+                <!-- <p class="text-[15px] text-gray-700 cursor-pointer hidden sm:block">MENU</p> -->
                 <button id="openMenuMobileBtn" type="button" class="text-[12px] ml-1 cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
                     <span class="line block w-6 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
                     <span class="line block w-4 h-[1.75px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
@@ -60,7 +79,7 @@
     <aside id="mobileMenu" class="fixed top-0 left-0 h-full w-full bg-white text-black transform -translate-x-full transition-transform duration-300 z-50 px-6 py-4 flex flex-col gap-0 shadow-lg"    >
         <div class="flex items-center justify-between mb-6">
             <a href="index.html" class="flex items-center gap-2">
-                <img src="images/logo.png" class="h-8 w-full" alt="Book My Test Logo">
+                <img src="images/logo.png" class="h-6 w-full" alt="Book My Test Logo">
             </a>
 
             <button title="button" id="closeMenu" class="text-2xl text-gray-700 focus:outline-none">
@@ -74,7 +93,7 @@
             <a href="./about_us.html" class="hover:text-[#007DF8]">About Us</a>
             <a href="./test_we_support.html" class="hover:text-[#007DF8]">Tests</a>
             <a href="./blog.html" class="hover:text-[#007DF8]">Blog</a>
-            <a href="./how_it_works.html" class="hover:text-[#007DF8]">How it Works</a>
+            <!-- <a href="./how_it_works.html" class="hover:text-[#007DF8]">How it Works</a> -->
             <a href="./download_app.html" class="hover:text-[#007DF8]">Downloads</a>
             <a href="help.html" class="hover:text-[#007DF8]">Help</a>
             <a href="./contact_us.html" class="hover:text-[#007DF8]">Contact</a>
@@ -95,10 +114,10 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-[80%,20%]">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full px-4">
+            <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 w-full ">
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./test_we_support.html">Tests We Support</a>
                             </li>
@@ -111,7 +130,7 @@
                         </ul>
                     </div>
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./blog.html">Blog</a>
                             </li>
@@ -124,7 +143,7 @@
                         </ul>
                     </div>
                     <div class="mt-32">
-                        <ul class="normal_text text-[#1a2a4a] text-lg sm:text-2xl md:text-[1.5rem] space-y-12 tracking-wide">
+                        <ul class="normal_text text-[#1a2a4a] text-xl space-y-12 tracking-wide">
                             <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
                                 <a href="./how_it_works.html">How It Works</a>
                             </li>
@@ -136,93 +155,94 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 py-24 pb-10 relative min-w-[260px] max-w-[100vw]">
-                    <div class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex">
-                        <div class="space-y-2 text-center">
-                            <a href="./contact_us.html" class="hover:text-red-700 text-[#1a2a4a] text-base text-sm tracking-wide cursor-pointer hover:underline">Contact Us</a>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Privacy Policy</p>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Refund & Reschedule Policy</p>
-                            <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Copyright Policy</p>
-                        </div>
-                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2">
-                            <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
-                            <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
-                            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
-                        </div>
-                        <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
-                            <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
-                            <i class="fa-brands fa-threads cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
-                        </div>
-                        <div class="mt-8 text-center">
-                            <h4 class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1">Book Test</h4>
-                            <p class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug">
-                                98000 Kathmandu,<br>
-                                Nepal
-                            </p>
+                    <div class="w-full bg-white flex flex-col items-start justify-start pt-32 pb-10">
+                        <div class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex">
+                            <div class="space-y-2 text-center">
+                                <a href="./contact_us.html" class="hover:text-red-700 text-[#1a2a4a] text-base text-sm tracking-wide cursor-pointer hover:underline">Contact Us</a>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Privacy Policy</p>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Refund & Reschedule Policy</p>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-sm cursor-pointer">Copyright Policy</p>
+                            </div>
+                            <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center my-4">
+                                <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
+                                <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
+                                <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+                            </div>
+                            <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
+                                <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
+                                <i class="fa-brands fa-threads cursor-pointer"></i>
+                                <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <h4 class="text-[#1a2a4a] sub_heading text-base text-sm font-semibold mb-1 cursor-pointer">Book My Test</h4>
+                                <p class="text-[#1a2a4a] text-base tracking-wide text-xs cursor-pointer">
+                                    98000 Kathmandu,<br>
+                                    Nepal
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </aside>
 
 
 
-
     <!-- About us -->
     <section class="bg-gray-50 text-gray-800 ">
 
-    <!-- Heading -->
-    <div class="bg-gray-100 text-white py-8 md:py-16 px-6 text-center">
-        <h1 class="text-2xl md:text-4xl font-bold mb-4 text-[#0a2458] main_heading">About Us</h1>
-        <p class="normal_text text-xs md:text-[16px] text-gray-600">
-        We make global test booking simple, secure, and stress-free — so you can focus on achieving your dreams.
-        </p>
-    </div>
-
-    <!-- Who We Are -->
-    <div class="max-w-6xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-            <h2 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-4 sub_heading border-l-4 border-[#ff805d] pl-3">Who We Are</h2>
-            <p class="text-gray-600 text-sm md:text-[15px] normal_text leading-relaxed">
-            We are a passionate team of educators and developers dedicated to helping learners
-            book their international tests with ease. From TOEFL and GRE to SAT and LanguageCert,
-            our platform simplifies every step — from discovering dates to making secure payments.
+        <!-- Heading -->
+        <div class="bg-gray-100 text-white py-8 md:py-16 px-6 text-center">
+            <h1 class="text-2xl md:text-4xl font-bold mb-4 text-[#0a2458] main_heading">About <span class="text-[#ff805d] underline underline-offset-4">Us</span></h1>
+            <p class="normal_text text-xs md:text-[16px] text-gray-600">
+            We make global test booking simple, secure, and stress-free — so you can focus on achieving your dreams.
             </p>
         </div>
-        <div class="hidden md:flex justify-center">
-            <img src="images/ourteam.png" alt="Team" class="max-h-72 w-full object-cover">
-        </div>
-        </div>
-    </div>
 
-    <!-- Mission & Vision -->
-    <div class="bg-white py-16">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-8 sub_heading">Our Mission & Vision</h2>
+        <!-- Who We Are -->
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-4 sub_heading border-l-4 border-[#ff805d] pl-3">Who We Are</h2>
+                <p class="text-gray-600 text-sm md:text-[15px] normal_text leading-relaxed">
+                We are a passionate team of educators and developers dedicated to helping learners
+                book their international tests with ease. From TOEFL and GRE to SAT and LanguageCert,
+                our platform simplifies every step — from discovering dates to making secure payments.
+                </p>
+            </div>
+            <div class="hidden md:flex justify-center">
+                <img src="images/ourteam.png" alt="Team" class="max-h-72 w-full object-cover">
+            </div>
+            </div>
+        </div>
 
-            <div class="grid md:grid-cols-2 gap-4 md:gap-8 w-full md:w-3/4 mx-auto">
-                <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition border-1">
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#0a2458] mb-2 sub_heading">Our Mission</h3>
-                    <p class="text-gray-600 normal_text text-sm md:text-[15px] leading-relaxed">
-                        To empower students with a smooth, transparent, and accessible platform for booking
-                        global tests — helping them step confidently into their academic future.
-                    </p>
-                </div>
-                <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition border-1">
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#0a2458] mb-2 sub_heading">Our Vision</h3>
-                    <p class="text-gray-600 normal_text text-sm md:text-[15px] leading-relaxed">
-                        To become the most trusted and student-friendly platform for international exam registration
-                        and preparation across the globe.
-                    </p>
+        <!-- Mission & Vision -->
+        <div class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0a2458] mb-8 sub_heading">Our Mission & Vision</h2>
+
+                <div class="grid md:grid-cols-2 gap-4 md:gap-8 w-full md:w-3/4 mx-auto">
+                    <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition border-1">
+                        <h3 class="text-xl md:text-2xl font-semibold text-[#0a2458] mb-2 sub_heading">Our Mission</h3>
+                        <p class="text-gray-600 normal_text text-sm md:text-[15px] leading-relaxed">
+                            To empower students with a smooth, transparent, and accessible platform for booking
+                            global tests — helping them step confidently into their academic future.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-3xl shadow-md hover:shadow-xl transition border-1">
+                        <h3 class="text-xl md:text-2xl font-semibold text-[#0a2458] mb-2 sub_heading">Our Vision</h3>
+                        <p class="text-gray-600 normal_text text-sm md:text-[15px] leading-relaxed">
+                            To become the most trusted and student-friendly platform for international exam registration
+                            and preparation across the globe.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
     <!-- Meet Our Team Section -->
     <section class="bg-[#f1f5f9] py-20">
@@ -307,28 +327,6 @@
     </div>
 
     
-    <!-- Advisors & Partners -->
-    <!-- <div class="bg-white py-20">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold text-[#0a2458] mb-10 sub_heading">Advisors & Partners</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg hover:-translate-y-2 border-t-4 border-[#ff805d] transition">
-                <h4 class="font-semibold text-lg text-[#0a2458] mb-2">GlobalEdu Alliance</h4>
-                <p class="text-sm text-gray-600">Official partner supporting test center collaborations and global reach.</p>
-            </div>
-            <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg hover:-translate-y-2 border-t-4 border-[#ff805d] transition">
-            <h4 class="font-semibold text-lg text-[#0a2458] mb-2">Nepal Education Board</h4>
-            <p class="text-sm text-gray-600">Providing verified test information and authentic updates for local students.</p>
-            </div>
-            <div class="bg-gray-50 p-6 rounded-3xl shadow hover:shadow-lg hover:-translate-y-2 border-t-4 border-[#ff805d] transition">
-                <h4 class="font-semibold text-lg text-[#0a2458] mb-2">SmartPay Systems</h4>
-                <p class="text-sm text-gray-600">Secure payment gateway partner ensuring trusted transactions globally.</p>
-            </div>
-        </div>
-        </div>
-    </div> -->
-
-
     <!-- Why Choose Us -->
     <div class="bg-[#f1f5f9] py-16">
         <div class="max-w-6xl mx-auto px-6 text-center">
@@ -403,16 +401,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- CTA -->
-    <!-- <div class="bg-[#0a2458] text-white py-16 text-center">
-        <h2 class="text-3xl font-semibold mb-4">Ready to Book Your Test?</h2>
-        <p class="mb-6 text-gray-200">Start your journey to success with a single click.</p>
-        <a href="tests.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition">
-        Explore Tests
-        </a>
-    </div> -->
 
  <!-- FOOTER -->
     <footer class="bg-[#110053] text-white py-10 ">
@@ -493,5 +481,6 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>lucide.createIcons();</script>
 <script src="script/big_menu.js"></script>
+
 </body>
 </html>
