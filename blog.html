@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
-    
+    <title>Homepage</title>
+
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,6 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -180,125 +181,116 @@
                 Stay informed with the latest updates, exam tips, and study resources from <span class="text-[#f59e0b] font-medium">Book My Test</span>.
             </p>
             </div>
-
-            <!-- Filter Tabs -->
-            <!-- <div class="flex flex-wrap justify-center gap-3 mb-10">
-            <button class="px-5 py-2 rounded-full bg-[#0a2458] text-white hover:bg-[#f59e0b] transition">All</button>
-            <button class="px-5 py-2 rounded-full border border-[#0a2458] text-[#0a2458] hover:bg-[#0a2458] hover:text-white transition">IELTS</button>
-            <button class="px-5 py-2 rounded-full border border-[#0a2458] text-[#0a2458] hover:bg-[#0a2458] hover:text-white transition">TOEFL</button>
-            <button class="px-5 py-2 rounded-full border border-[#0a2458] text-[#0a2458] hover:bg-[#0a2458] hover:text-white transition">GRE</button>
-            <button class="px-5 py-2 rounded-full border border-[#0a2458] text-[#0a2458] hover:bg-[#0a2458] hover:text-white transition">Language Tips</button>
-            </div> -->
         </div>
     </section>
 
-<section class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-6 md:px-0">
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-6 md:px-0">
 
-        <!-- Featured Post -->
-        <div class=" grid md:grid-cols-[40%_60%] gap-10 items-center">
-            <img src="images/blog-main.jpg" alt="Featured Blog" class="rounded-2xl h-full object-cover">
-            
-            <div class="hidden md:flex px-5 flex-col">
-                <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 w-20 py-1 rounded-full text-sm font-medium">Featured</span>
+            <!-- Featured Post -->
+            <div class=" grid md:grid-cols-[40%_60%] gap-10 items-center">
+                <img src="images/blog-main.jpg" alt="Featured Blog" class="rounded-2xl h-full object-cover">
                 
-                <h1 class="sub_heading font-bold text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h1>
-                
-                <p class="text-gray-600 mb-6">Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.</p>
-                
-                <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">
-                    Read More →
-                </a>
+                <div class="hidden md:flex px-5 flex-col">
+                    <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 w-20 py-1 rounded-full text-sm font-medium">Featured</span>
+                    
+                    <h1 class="sub_heading font-bold text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h1>
+                    
+                    <p class="normal_text text-gray-600 mb-6">Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.</p>
+                    
+                    <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">
+                        Read More →
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                    <h2 class="sub_heading font-bold text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h2>
+                    <p class="text-gray-600 mb-6">
+                    Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.
+                    </p>
+                    <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                </div>
+
+
+
             </div>
-
-            <div class="md:hidden">
-                <span class="bg-[#f59e0b]/20 text-[#f59e0b] px-3 py-1 rounded-full text-sm font-medium">Featured</span>
-                <h2 class="sub_heading text-[#0a2458] my-3">Top 10 Mistakes Students Make Before Their Test Day</h2>
-                <p class="text-gray-600 mb-6">
-                Learn how to avoid common mistakes and prepare confidently for your exam day. Our experts share practical tips for success.
-                </p>
-                <a href="./blog_feature_post.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
-            </div>
-
-
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-8 md:py-24">
-    <div class="max-w-6xl mx-auto px-6 md:px-0">
-        <h1 class="text-2xl md:text-3xl mb-4 text-[#0a2458] font-bold sub_heading">Latest Stories</h1>
-        <!-- Blog Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
-            <!-- blog1 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog4.jpg" alt="Blog SAT" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">SAT</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Conquered SAT</h3>
-                    <p class="text-gray-600 text-sm mb-4">From panic to laughs: my quirky journey of mastering SAT math questions creatively.</p>
-                    <a href="./blog1.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+    <section class="py-8 md:py-24">
+        <div class="max-w-6xl mx-auto px-6 md:px-0">
+            <h1 class="text-2xl md:text-3xl mb-4 text-[#0a2458] font-bold sub_heading">Latest Stories</h1>
+            <!-- Blog Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                <!-- blog1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog4.jpg" alt="Blog SAT" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">SAT</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Conquered SAT</h3>
+                        <p class="text-gray-600 text-sm mb-4">From panic to laughs: my quirky journey of mastering SAT math questions creatively.</p>
+                        <a href="./blog1.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- blog2 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog5.jpg" alt="Blog Language Cert" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Language Cert</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">My Funny Fails Before Acing LanguageCert Listening</h3>
-                    <p class="text-gray-600 text-sm mb-4">Mistakes, surprises, and small hacks I discovered while preparing for LanguageCert.</p>
-                    <a href="./blog2.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                <!-- blog2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog5.jpg" alt="Blog Language Cert" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Language Cert</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">My Funny Fails Before Acing LanguageCert Listening</h3>
+                        <p class="text-gray-600 text-sm mb-4">Mistakes, surprises, and small hacks I discovered while preparing for LanguageCert.</p>
+                        <a href="./blog2.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- TOEFL -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog6.jpg" alt="Blog TOEFL" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">TOEFL</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Stopped Freezing and Started Chatting</h3>
-                    <p class="text-gray-600 text-sm mb-4">Tips, tricks, and personal anecdotes that helped me finally speak confidently on TOEFL.</p>
-                    <a href="./blog3.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                <!-- TOEFL -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog6.jpg" alt="Blog TOEFL" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">TOEFL</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Stopped Freezing and Started Chatting</h3>
+                        <p class="text-gray-600 text-sm mb-4">Tips, tricks, and personal anecdotes that helped me finally speak confidently on TOEFL.</p>
+                        <a href="./blog3.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Blog Card -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog1.jpg" alt="Blog 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">IELTS</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How to Improve Your IELTS Speaking Score</h3>
-                    <p class="text-gray-600 text-sm mb-4">Simple and effective techniques to boost your confidence and fluency during IELTS speaking tests.</p>
-                    <a href="./blog4.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                <!-- Blog Card -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog1.jpg" alt="Blog 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">IELTS</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How to Improve Your IELTS Speaking Score</h3>
+                        <p class="text-gray-600 text-sm mb-4">Simple and effective techniques to boost your confidence and fluency during IELTS speaking tests.</p>
+                        <a href="./blog4.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- PTE -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog2.jpg" alt="Blog PTE" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">PTE</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Outsmarted PTE Reading Without Pulling My Hair</h3>
-                    <p class="text-gray-600 text-sm mb-4">Fun tricks and sneaky shortcuts I used to tackle PTE reading questions like a pro.</p>
-                    <a href="./blog5.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                
+                <!-- PTE -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog2.jpg" alt="Blog PTE" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">PTE</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Outsmarted PTE Reading Without Pulling My Hair</h3>
+                        <p class="text-gray-600 text-sm mb-4">Fun tricks and sneaky shortcuts I used to tackle PTE reading questions like a pro.</p>
+                        <a href="./blog5.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Duolingo -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-                <img src="images/blog3.jpg" alt="Blog Duolingo" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Duolingo</span>
-                    <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Nailed the Duolingo Test While Binge-Watching Netflix</h3>
-                    <p class="text-gray-600 text-sm mb-4">Yes, really! Tips for boosting your score without sacrificing all your free time.</p>
-                    <a href="./blog6.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                <!-- Duolingo -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/blog3.jpg" alt="Blog Duolingo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm bg-[#f59e0b]/20 text-[#f59e0b] px-2 py-1 rounded">Duolingo</span>
+                        <h3 class="text-md font-semibold text-[#0a2458] mt-3 mb-2">How I Nailed the Duolingo Test While Binge-Watching Netflix</h3>
+                        <p class="text-gray-600 text-sm mb-4">Yes, really! Tips for boosting your score without sacrificing all your free time.</p>
+                        <a href="./blog6.html" class="font-['Nunito'] text-[#0a2458] font-bold hover:text-[#f59e0b] transition">Read More →</a>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
  <!-- FOOTER -->
